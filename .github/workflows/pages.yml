@@ -44,7 +44,7 @@ jobs:
       - name: Install web dependencies
         working-directory: web
         run: |
-          cp .env.example .env
+          printf 'DATABASE_URL="file:./dev.db"\n' > .env
           npm ci
 
       - name: Run tests
