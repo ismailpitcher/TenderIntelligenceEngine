@@ -54,7 +54,7 @@ function renderStats() {
   const items = state.filtered;
   const qualified = items.filter((item) => getReviewFor(item).review_status === "qualified").length;
   const watch = items.filter((item) => getReviewFor(item).review_status === "watch").length;
-  const highFit = items.filter((item) => Number(item.fit_score) >= 75).length;
+  const highFit = items.filter((item) => Number(item.fit_score) >= 60).length;
   const gridCards = [
     ["Filtered notices", items.length],
     ["High-fit in view", highFit],
@@ -71,6 +71,39 @@ function renderStats() {
         </div>
       `,
     )
+    .join("");
+}
+
+function renderRunHealth() {
+  const container = document.getElementById("runHealth");
+  const runs = state.snapshot?.stats?.recent_runs || [];
+  if (!runs.length) {
+    container.innerHTML = `<div class="muted">No source runs recorded yet.</div>`;
+    return;
+  }
+
+  const latestBySource = new Map();
+  runs.forEach((run) => {
+    if (!latestBySource.has(run.source)) {
+      latestBySource.set(run.source, run);
+    }
+  });
+
+  container.innerHTML = [...latestBySource.values()]
+    .map((run) => {
+      const statusClass = run.status === "success" ? "success" : "failed";
+      const detail =
+        run.status === "success"
+          ? `${run.inserted_count} inserted`
+          : escapeHtml((run.error_message || "Source failed").slice(0, 120));
+      return `
+        <div class="run-item">
+          <span class="status-pill ${statusClass}">${run.status}</span>
+          <strong>${escapeHtml(run.source)}</strong>
+          <span class="muted">${detail}</span>
+        </div>
+      `;
+    })
     .join("");
 }
 
@@ -330,6 +363,7 @@ async function boot() {
   populateSelect("sourceFilter", state.snapshot.meta.sources || []);
   populateSelect("countryFilter", state.snapshot.meta.countries || []);
   document.getElementById("generatedAt").textContent = state.snapshot.generated_at;
+  renderRunHealth();
   applyFilters();
 }
 

@@ -41,7 +41,7 @@ jobs:
       - name: Build static snapshot
         run: |
           python -m app.cli init-db
-          python -m app.cli sync --days-back 14 --limit-per-source 25
+          python -m app.cli sync --days-back 30 --limit-per-source 15
           python -m app.cli export-static --out-dir docs/data --limit 1000
 
       - name: Configure Pages

@@ -153,6 +153,35 @@ input::placeholder {
   margin-top: 10px;
 }
 
+.run-item {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.72rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-pill.success {
+  background: rgba(22, 181, 127, 0.16);
+  color: #98f2cf;
+}
+
+.status-pill.failed {
+  background: rgba(210, 74, 74, 0.16);
+  color: #ffb8b8;
+}
+
 .main-stage {
   padding: 32px;
 }
@@ -442,4 +471,3 @@ input::placeholder {
     grid-template-columns: 1fr;
   }
 }
-

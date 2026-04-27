@@ -78,6 +78,7 @@ def score_notice(tender: NormalizedTender) -> ScoreResult:
     workflow_score, workflow_matches = _bucket_score(text, taxonomy["positive"]["commercial_workflows"], 34)
     buyer_score, buyer_matches = _bucket_score(text, taxonomy["positive"]["buyer_teams"], 16)
     integration_score, integration_matches = _bucket_score(text, taxonomy["positive"]["integrations"], 14)
+    software_score, software_matches = _bucket_score(text, taxonomy["positive"]["software_delivery"], 20)
     scale_score, scale_matches = _bucket_score(text, taxonomy["positive"]["scale_signals"], 12)
 
     negative_score, negative_matches = _bucket_score(text, taxonomy["negative"]["generic_exclusions"], 24)
@@ -91,27 +92,71 @@ def score_notice(tender: NormalizedTender) -> ScoreResult:
     synergy_score = 0.0
     if industry_matches and workflow_matches:
         synergy_score += 8
+    if workflow_matches and software_matches:
+        synergy_score += 6
     if buyer_matches and integration_matches:
+        synergy_score += 4
+    if software_matches and integration_matches:
         synergy_score += 4
     if scale_matches and workflow_matches:
         synergy_score += 3
+    if cpv_positive_matches and (software_matches or workflow_matches or integration_matches):
+        synergy_score += 4
 
-    positive_total = industry_score + workflow_score + buyer_score + integration_score + scale_score + cpv_positive_score + synergy_score
+    positive_total = (
+        industry_score
+        + workflow_score
+        + buyer_score
+        + integration_score
+        + software_score
+        + scale_score
+        + cpv_positive_score
+        + synergy_score
+    )
     negative_total = negative_score + physical_score + cpv_negative_score
     fit_score = max(0.0, min(100.0, positive_total - negative_total))
 
+    core_signal_count = sum(
+        1
+        for matches in [
+            workflow_matches,
+            buyer_matches,
+            integration_matches,
+            software_matches,
+            cpv_positive_matches,
+        ]
+        if matches
+    )
+    commercial_signal_count = sum(1 for matches in [workflow_matches, buyer_matches, integration_matches] if matches)
+    delivery_signal_count = sum(1 for matches in [software_matches, cpv_positive_matches] if matches)
+    context_signal_count = sum(1 for matches in [industry_matches, scale_matches] if matches)
+
     excluded = False
-    if physical_score >= 16 or (negative_score >= 16 and positive_total < 40):
+    if core_signal_count == 0:
+        excluded = True
+        fit_score = min(fit_score, 19)
+    elif core_signal_count == 1 and context_signal_count == 0 and fit_score < 25:
         excluded = True
         fit_score = min(fit_score, 24)
-    if physical_score >= 12 and fit_score < 30:
+    elif commercial_signal_count == 0 and delivery_signal_count > 0 and fit_score < 35:
         excluded = True
+        fit_score = min(fit_score, 24)
 
-    if fit_score >= 75:
+    if physical_score >= 12 and core_signal_count < 2:
+        excluded = True
+        fit_score = min(fit_score, 20)
+    if cpv_negative_score >= 10 and core_signal_count < 2:
+        excluded = True
+        fit_score = min(fit_score, 20)
+    if negative_score >= 16 and positive_total < 40:
+        excluded = True
+        fit_score = min(fit_score, 24)
+
+    if fit_score >= 60:
         score_label = "high"
-    elif fit_score >= 50:
+    elif fit_score >= 35:
         score_label = "medium"
-    elif fit_score >= 30:
+    elif fit_score >= 20:
         score_label = "low"
     else:
         score_label = "discard"
@@ -125,6 +170,8 @@ def score_notice(tender: NormalizedTender) -> ScoreResult:
         positive_reasons.append("Buyer-team language suggests sales or commercial ownership")
     if integration_matches:
         positive_reasons.append("Integration stack signals point to CRM, ERP, or enablement ecosystems")
+    if software_matches:
+        positive_reasons.append("Software or platform-delivery language suggests an implementable digital opportunity")
     if scale_matches:
         positive_reasons.append("Scale signals suggest a budgeted enterprise-style transformation")
     if cpv_positive_matches:
@@ -143,6 +190,7 @@ def score_notice(tender: NormalizedTender) -> ScoreResult:
         "commercial_workflows": workflow_matches,
         "buyer_teams": buyer_matches,
         "integrations": integration_matches,
+        "software_delivery": software_matches,
         "scale_signals": scale_matches,
         "negative_terms": negative_matches,
         "physical_goods": physical_matches,
@@ -155,6 +203,7 @@ def score_notice(tender: NormalizedTender) -> ScoreResult:
         "commercial_workflows": round(workflow_score, 2),
         "buyer_teams": round(buyer_score, 2),
         "integrations": round(integration_score, 2),
+        "software_delivery": round(software_score, 2),
         "scale_signals": round(scale_score, 2),
         "cpv_positive": round(cpv_positive_score, 2),
         "synergy": round(synergy_score, 2),

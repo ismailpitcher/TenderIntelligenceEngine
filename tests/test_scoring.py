@@ -38,3 +38,13 @@ def test_physical_procurement_scores_low():
     result = score_notice(notice)
     assert result.fit_score < 30
     assert result.excluded
+
+
+def test_generic_software_without_pitcher_signals_is_excluded():
+    notice = build_notice(
+        "Annual ICT software subscription and general licensing support for internal back-office users.",
+        title="General ICT Software Subscription",
+    )
+    result = score_notice(notice)
+    assert result.excluded
+    assert result.fit_score < 25

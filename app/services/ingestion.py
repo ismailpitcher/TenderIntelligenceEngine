@@ -43,6 +43,8 @@ def sync_sources(
             fetched_count = len(notices)
             for notice in notices:
                 score = score_notice(notice)
+                if score.excluded:
+                    continue
                 action = upsert_tender(notice, score)
                 if action == "inserted":
                     inserted_count += 1
@@ -84,4 +86,3 @@ def sync_sources(
                 }
             )
     return summaries
-

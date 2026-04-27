@@ -268,9 +268,13 @@ def list_tenders(
     fit_min: float = 0,
     limit: int = 50,
     offset: int = 0,
+    include_excluded: bool = False,
 ) -> dict[str, Any]:
     where_clauses = ["fit_score >= ?"]
     params: list[Any] = [fit_min]
+
+    if not include_excluded:
+        where_clauses.append("excluded = 0")
 
     if q:
         where_clauses.append("(LOWER(title) LIKE ? OR LOWER(description) LIKE ? OR LOWER(raw_text) LIKE ?)")
@@ -336,7 +340,7 @@ def update_tender_review(tender_id: int, review_status: str, review_notes: str |
 def list_sources() -> list[str]:
     with get_connection() as connection:
         rows = connection.execute(
-            "SELECT DISTINCT source FROM tenders ORDER BY source ASC"
+            "SELECT DISTINCT source FROM tenders WHERE excluded = 0 ORDER BY source ASC"
         ).fetchall()
     return [row["source"] for row in rows]
 
@@ -344,21 +348,31 @@ def list_sources() -> list[str]:
 def list_countries() -> list[str]:
     with get_connection() as connection:
         rows = connection.execute(
-            "SELECT DISTINCT country FROM tenders WHERE country IS NOT NULL AND country != '' ORDER BY country ASC"
+            "SELECT DISTINCT country FROM tenders WHERE excluded = 0 AND country IS NOT NULL AND country != '' ORDER BY country ASC"
         ).fetchall()
     return [row["country"] for row in rows]
 
 
 def get_dashboard_stats() -> dict[str, Any]:
     with get_connection() as connection:
+        inventory = connection.execute(
+            """
+            SELECT
+                COUNT(*) AS stored_total,
+                SUM(CASE WHEN excluded = 1 THEN 1 ELSE 0 END) AS excluded_total
+            FROM tenders
+            """
+        ).fetchone()
+
         score_bands = connection.execute(
             """
             SELECT
-                SUM(CASE WHEN fit_score >= 75 THEN 1 ELSE 0 END) AS high_fit,
-                SUM(CASE WHEN fit_score >= 50 AND fit_score < 75 THEN 1 ELSE 0 END) AS medium_fit,
-                SUM(CASE WHEN fit_score < 50 THEN 1 ELSE 0 END) AS low_fit,
+                SUM(CASE WHEN fit_score >= 60 THEN 1 ELSE 0 END) AS high_fit,
+                SUM(CASE WHEN fit_score >= 35 AND fit_score < 60 THEN 1 ELSE 0 END) AS medium_fit,
+                SUM(CASE WHEN fit_score < 35 THEN 1 ELSE 0 END) AS low_fit,
                 COUNT(*) AS total
             FROM tenders
+            WHERE excluded = 0
             """
         ).fetchone()
 
@@ -366,6 +380,7 @@ def get_dashboard_stats() -> dict[str, Any]:
             """
             SELECT review_status, COUNT(*) AS count
             FROM tenders
+            WHERE excluded = 0
             GROUP BY review_status
             """
         ).fetchall()
@@ -374,6 +389,7 @@ def get_dashboard_stats() -> dict[str, Any]:
             """
             SELECT source, COUNT(*) AS count
             FROM tenders
+            WHERE excluded = 0
             GROUP BY source
             ORDER BY count DESC, source ASC
             """
@@ -389,6 +405,10 @@ def get_dashboard_stats() -> dict[str, Any]:
         ).fetchall()
 
     return {
+        "inventory": {
+            "stored_total": int((inventory or {})["stored_total"] or 0),
+            "excluded_total": int((inventory or {})["excluded_total"] or 0),
+        },
         "score_bands": dict(score_bands),
         "reviews": [dict(row) for row in reviews],
         "sources": [dict(row) for row in sources],

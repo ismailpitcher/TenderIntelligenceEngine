@@ -23,7 +23,8 @@ class Settings:
     default_sync_days: int = int(os.getenv("TIE_DEFAULT_SYNC_DAYS", "10"))
     sync_limit_per_source: int = int(os.getenv("TIE_SYNC_LIMIT_PER_SOURCE", "20"))
     max_raw_text_length: int = int(os.getenv("TIE_MAX_RAW_TEXT_LENGTH", "50000"))
+    candidate_fit_min: int = int(os.getenv("TIE_CANDIDATE_FIT_MIN", "8"))
+    max_source_scan: int = int(os.getenv("TIE_MAX_SOURCE_SCAN", "300"))
 
 
 settings = Settings()
-

@@ -66,6 +66,24 @@
       { "term": "content repository", "weight": 5 },
       { "term": "analytics", "weight": 4 }
     ],
+    "software_delivery": [
+      { "term": "software", "weight": 4 },
+      { "term": "platform", "weight": 4 },
+      { "term": "solution", "weight": 4 },
+      { "term": "application", "weight": 4 },
+      { "term": "saas", "weight": 6 },
+      { "term": "subscription", "weight": 3 },
+      { "term": "licensing", "weight": 3 },
+      { "term": "implementation", "weight": 5 },
+      { "term": "system integration", "weight": 6 },
+      { "term": "digital transformation", "weight": 6 },
+      { "term": "information system", "weight": 5 },
+      { "term": "business intelligence", "weight": 5 },
+      { "term": "data platform", "weight": 5 },
+      { "term": "customer relationship management", "weight": 7 },
+      { "term": "managed service", "weight": 4 },
+      { "term": "consulting services", "weight": 4 }
+    ],
     "scale_signals": [
       { "term": "global", "weight": 4 },
       { "term": "enterprise", "weight": 5 },
@@ -98,6 +116,7 @@
     ],
     "physical_goods_exclusions": [
       { "term": "medical equipment", "weight": 10 },
+      { "term": "medical devices", "weight": 10 },
       { "term": "beds", "weight": 7 },
       { "term": "hardware", "weight": 7 },
       { "term": "laptops", "weight": 7 },
