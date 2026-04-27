@@ -1,0 +1,229 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum Industry {
+  PHARMA
+  MEDTECH
+  FINANCIAL_SERVICES
+  ENTERPRISE_FIELD_SALES
+  OTHER
+}
+
+enum SignalType {
+  DIRECT_PROCUREMENT
+  HIRING
+  TECHNOLOGY_CHANGE
+  ORGANIZATIONAL_CHANGE
+  STRATEGIC_INITIATIVE
+  VENDOR_SIGNAL
+  PUBLIC_TENDER
+}
+
+enum SourceType {
+  JOB_POSTING
+  PRESS_RELEASE
+  SOCIAL_POST
+  TENDER_PORTAL
+  COMPANY_SITE
+  PARTNER_NEWS
+  VENDOR_CASE_STUDY
+  UPLOADED_EXPORT
+  SEARCH_RESULT
+}
+
+enum TargetCategory {
+  SALES_ENABLEMENT
+  REVENUE_ENABLEMENT
+  FIELD_ENABLEMENT
+  COMMERCIAL_EXCELLENCE
+  HCP_ENGAGEMENT
+  CLM_EDETAILING
+  CRM_ADOPTION
+  SALESFORCE_LIFE_SCIENCES
+  VEEVA_IQVIA_TRANSITION
+  OMNICHANNEL
+  DIGITAL_SALES_ROOM
+  AI_COACHING
+  SALES_READINESS
+  CONTENT_GOVERNANCE
+  MOBILE_FIELD_APP
+  OFFLINE_CONTENT
+  SAMPLE_CONSENT
+  SALES_ANALYTICS
+}
+
+enum RfpStage {
+  NO_SIGNAL
+  EARLY_SIGNAL
+  PRE_RFP
+  ACTIVE_EVALUATION
+  ACTIVE_RFP
+  POST_DECISION
+}
+
+enum BuyingRole {
+  ECONOMIC_BUYER
+  CHAMPION
+  PROGRAM_OWNER
+  INFLUENCER
+  PROCUREMENT
+  END_USER
+}
+
+enum ProviderStatus {
+  MOCK
+  ACTIVE
+  PLANNED
+  DISABLED
+}
+
+enum ProviderRunStatus {
+  SUCCESS
+  PARTIAL
+  FAILED
+}
+
+enum SettingType {
+  TARGET_INDUSTRY
+  TARGET_COUNTRY
+}
+
+model Account {
+  id            String        @id @default(cuid())
+  name          String
+  dedupeKey     String        @unique
+  website       String?
+  industry      Industry
+  country       String
+  employeeCount Int?
+  revenue       Float?
+  owner         String?
+  notes         String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  signals       Signal[]
+  stakeholders  Stakeholder[]
+
+  @@index([name])
+  @@index([industry, country])
+}
+
+model Signal {
+  id                String         @id @default(cuid())
+  fingerprint       String         @unique
+  accountId         String
+  providerKey       String
+  title             String
+  description       String
+  signalType        SignalType
+  sourceType        SourceType
+  sourceName        String
+  sourceUrl         String
+  detectedAt        DateTime
+  publishedAt       DateTime?
+  confidence        Float
+  confidenceReason  String
+  scoreImpact       Int
+  evidenceSnippet   String
+  category          TargetCategory
+  recommendedAction String
+  isInferred        Boolean        @default(true)
+  stageHint         RfpStage?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  account           Account        @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@index([accountId, publishedAt])
+  @@index([signalType, category])
+}
+
+model Stakeholder {
+  id                    String     @id @default(cuid())
+  accountId             String
+  name                  String
+  title                 String
+  function              String
+  buyingRole            BuyingRole
+  relevanceScore        Int
+  suggestedMessageAngle String
+  createdAt             DateTime   @default(now())
+  updatedAt             DateTime   @updatedAt
+  account               Account    @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@index([accountId, relevanceScore])
+}
+
+model ProviderRun {
+  id              String            @id @default(cuid())
+  providerKey     String
+  providerName    String
+  status          ProviderRunStatus
+  summary         String
+  accountsScanned Int               @default(0)
+  signalsCreated  Int               @default(0)
+  startedAt       DateTime
+  finishedAt      DateTime
+  createdAt       DateTime          @default(now())
+
+  @@index([providerKey, startedAt])
+}
+
+model SearchKeyword {
+  id         String         @id @default(cuid())
+  groupName  String
+  term       String
+  signalType SignalType?
+  category   TargetCategory?
+  weight     Int            @default(1)
+  active     Boolean        @default(true)
+  createdAt  DateTime       @default(now())
+  updatedAt  DateTime       @updatedAt
+
+  @@unique([groupName, term])
+}
+
+model Competitor {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ScoringWeight {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  label       String
+  value       Int
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ProviderConfig {
+  id          String         @id @default(cuid())
+  key         String         @unique
+  name        String
+  status      ProviderStatus
+  description String
+  notes       String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+}
+
+model TargetProfileSetting {
+  id        String      @id @default(cuid())
+  type      SettingType
+  value     String
+  label     String
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  @@unique([type, value])
+}

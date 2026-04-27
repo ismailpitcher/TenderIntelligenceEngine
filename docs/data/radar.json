@@ -1,0 +1,2614 @@
+{
+  "generatedAt": "2026-04-27T12:22:16.394Z",
+  "summary": {
+    "monitoredAccounts": 10,
+    "activeRfpSignals": 3,
+    "preRfpSignals": 3,
+    "highPriorityAccounts": 5,
+    "recentSignals": 18
+  },
+  "accounts": [
+    {
+      "id": "cmoh54llz002hjt6yaaz9470v",
+      "name": "Fresenius Kabi",
+      "website": "https://www.fresenius-kabi.com",
+      "industry": "MEDTECH",
+      "industryLabel": "Medtech",
+      "country": "Germany",
+      "employeeCount": 43000,
+      "revenue": 8.5,
+      "owner": "DACH Medtech Pod",
+      "notes": "Field-heavy healthcare business with meaningful workflow and sample/consent relevance.",
+      "score": 100,
+      "confidence": 100,
+      "stage": "ACTIVE_RFP",
+      "stageLabel": "Active RFP / Tender",
+      "lastDetectedAt": "2026-04-19T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "SAMPLE_CONSENT",
+          "label": "Sample / Consent Workflows"
+        },
+        {
+          "value": "MOBILE_FIELD_APP",
+          "label": "Mobile Field Sales App"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "DIRECT_PROCUREMENT",
+          "label": "DIRECT PROCUREMENT",
+          "value": 40,
+          "reason": "Strongest direct procurement signal contributes to the account score."
+        },
+        {
+          "key": "PUBLIC_TENDER",
+          "label": "PUBLIC TENDER",
+          "value": 40,
+          "reason": "Strongest public tender signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lmb003ojt6y2chfvyo5",
+          "title": "RFI for sample management and field consent workflows",
+          "description": "A mock RFI references consent capture, sample visibility, and offline field workflow requirements.",
+          "signalType": "DIRECT_PROCUREMENT",
+          "signalTypeLabel": "Direct procurement",
+          "sourceType": "TENDER_PORTAL",
+          "sourceName": "Mock Public Tender Monitor",
+          "sourceUrl": "https://example.com/mock/fresenius-kabi/sample-consent-rfi",
+          "detectedAt": "2026-04-19T11:55:23.387Z",
+          "publishedAt": "2026-04-19T11:55:23.387Z",
+          "confidence": 90,
+          "scoreImpact": 40,
+          "evidenceSnippet": "Requirements call out offline operation, sample workflows, and manager oversight.",
+          "category": "SAMPLE_CONSENT",
+          "categoryLabel": "Sample / Consent Workflows",
+          "recommendedAction": "Bring a workflow-led POV that covers consent, content, and field productivity together.",
+          "isInferred": false
+        },
+        {
+          "id": "cmoh54lmc003qjt6yo0cvpnwi",
+          "title": "Mobile field sales app review linked to CRM modernization",
+          "description": "Mock technology watch indicates a broader mobile field workflow review connected to CRM modernization.",
+          "signalType": "PUBLIC_TENDER",
+          "signalTypeLabel": "Public tender",
+          "sourceType": "COMPANY_SITE",
+          "sourceName": "Mock Technology Change Watch",
+          "sourceUrl": "https://example.com/mock/fresenius-kabi/mobile-field-review",
+          "detectedAt": "2026-04-08T11:55:23.387Z",
+          "publishedAt": "2026-04-08T11:55:23.387Z",
+          "confidence": 90,
+          "scoreImpact": 40,
+          "evidenceSnippet": "Program language covers offline use, CRM connectivity, and compliant content access.",
+          "category": "MOBILE_FIELD_APP",
+          "categoryLabel": "Mobile Field Sales App",
+          "recommendedAction": "Lead with offline/mobile field execution and adoption outcomes.",
+          "isInferred": false
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54llz002ijt6yzk5uyivr",
+          "accountId": "cmoh54llz002hjt6yaaz9470v",
+          "name": "Klara Vogel",
+          "title": "VP Field Excellence",
+          "function": "Field Excellence",
+          "buyingRole": "ECONOMIC_BUYER",
+          "relevanceScore": 90,
+          "suggestedMessageAngle": "Connecting field productivity gains to mobile workflows and content governance.",
+          "createdAt": "2026-04-27T11:55:23.880Z",
+          "updatedAt": "2026-04-27T11:55:23.880Z"
+        },
+        {
+          "id": "cmoh54llz002jjt6yix1bwg4m",
+          "accountId": "cmoh54llz002hjt6yaaz9470v",
+          "name": "Jan Fuchs",
+          "title": "Director, Sales Technology Programs",
+          "function": "Commercial Technology",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 85,
+          "suggestedMessageAngle": "Comparing sample management, consent, and offline field-execution options before formal sourcing.",
+          "createdAt": "2026-04-27T11:55:23.880Z",
+          "updatedAt": "2026-04-27T11:55:23.880Z"
+        },
+        {
+          "id": "cmoh54llz002kjt6yseaebr48",
+          "accountId": "cmoh54llz002hjt6yaaz9470v",
+          "name": "Miriam Beck",
+          "title": "Head of Procurement, Commercial IT",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 77,
+          "suggestedMessageAngle": "Understanding whether an RFI path is already in motion.",
+          "createdAt": "2026-04-27T11:55:23.880Z",
+          "updatedAt": "2026-04-27T11:55:23.880Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Move fast to understand whether the shortlist is still open and where field execution gaps remain.",
+        "email": "Subject: Quick benchmark on Fresenius Kabi's sample / consent workflows and mobile field sales app review\n\nHi Klara,\n\nIt looks like Fresenius Kabi may be reviewing sample / consent workflows and mobile field sales app after signals like \"RFI for sample management and field consent workflows\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Fresenius Kabi may be revisiting sample / consent workflows and mobile field sales app. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Prioritize same-week outreach to the likely program owner and procurement contact."
+      },
+      "missingInformation": [
+        "No explicit competitor or incumbent vendor evidence yet."
+      ],
+      "exports": {
+        "markdown": "# Fresenius Kabi\n\n- Industry: Medtech\n- Country: Germany\n- Employees: 43000\n- Revenue: $8.5B\n- Stage: Active RFP / Tender\n- Signal score: 100/100\n- Confidence: 100%\n\n## Why this account is ranked here\n\n- DIRECT PROCUREMENT: +40 — Strongest direct procurement signal contributes to the account score.\n- PUBLIC TENDER: +40 — Strongest public tender signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n\n## Signals\n\n### RFI for sample management and field consent workflows\n- Type: Direct procurement\n- Category: Sample / Consent Workflows\n- Confidence: 90%\n- Source: Mock Public Tender Monitor\n- Published: 2026-04-19T11:55:23.387Z\n- Evidence: Requirements call out offline operation, sample workflows, and manager oversight.\n- Action: Bring a workflow-led POV that covers consent, content, and field productivity together.\n- URL: https://example.com/mock/fresenius-kabi/sample-consent-rfi\n\n### Mobile field sales app review linked to CRM modernization\n- Type: Public tender\n- Category: Mobile Field Sales App\n- Confidence: 90%\n- Source: Mock Technology Change Watch\n- Published: 2026-04-08T11:55:23.387Z\n- Evidence: Program language covers offline use, CRM connectivity, and compliant content access.\n- Action: Lead with offline/mobile field execution and adoption outcomes.\n- URL: https://example.com/mock/fresenius-kabi/mobile-field-review\n\n## Stakeholders\n\n- Klara Vogel, VP Field Excellence (Field Excellence) — Connecting field productivity gains to mobile workflows and content governance.\n- Jan Fuchs, Director, Sales Technology Programs (Commercial Technology) — Comparing sample management, consent, and offline field-execution options before formal sourcing.\n- Miriam Beck, Head of Procurement, Commercial IT (Procurement) — Understanding whether an RFI path is already in motion.\n\n## Outreach angle\n\nMove fast to understand whether the shortlist is still open and where field execution gaps remain.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Fresenius Kabi's sample / consent workflows and mobile field sales app review\n\nHi Klara,\n\nIt looks like Fresenius Kabi may be reviewing sample / consent workflows and mobile field sales app after signals like \"RFI for sample management and field consent workflows\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Fresenius Kabi may be revisiting sample / consent workflows and mobile field sales app. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No explicit competitor or incumbent vendor evidence yet.\n",
+        "messagesMarkdown": "# Fresenius Kabi outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Fresenius Kabi's sample / consent workflows and mobile field sales app review\n\nHi Klara,\n\nIt looks like Fresenius Kabi may be reviewing sample / consent workflows and mobile field sales app after signals like \"RFI for sample management and field consent workflows\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Fresenius Kabi may be revisiting sample / consent workflows and mobile field sales app. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nPrioritize same-week outreach to the likely program owner and procurement contact.\n",
+        "messagesText": "Fresenius Kabi outreach pack\n\nEmail\nSubject: Quick benchmark on Fresenius Kabi's sample / consent workflows and mobile field sales app review\n\nHi Klara,\n\nIt looks like Fresenius Kabi may be reviewing sample / consent workflows and mobile field sales app after signals like \"RFI for sample management and field consent workflows\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Fresenius Kabi may be revisiting sample / consent workflows and mobile field sales app. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nPrioritize same-week outreach to the likely program owner and procurement contact."
+      }
+    },
+    {
+      "id": "cmoh54lm0002pjt6yi1gpvkph",
+      "name": "Bayer",
+      "website": "https://www.bayer.com",
+      "industry": "PHARMA",
+      "industryLabel": "Pharma",
+      "country": "Germany",
+      "employeeCount": 100000,
+      "revenue": 50.7,
+      "owner": "Global Pharma Pod",
+      "notes": "Strong fit for Veeva, Salesforce, omnichannel, and commercial excellence themes.",
+      "score": 90,
+      "confidence": 94,
+      "stage": "ACTIVE_RFP",
+      "stageLabel": "Active RFP / Tender",
+      "lastDetectedAt": "2026-04-10T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "VEEVA_IQVIA_TRANSITION",
+          "label": "Veeva / IQVIA Transition"
+        },
+        {
+          "value": "OMNICHANNEL",
+          "label": "Omnichannel Engagement"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "TECHNOLOGY_CHANGE",
+          "label": "TECHNOLOGY CHANGE",
+          "value": 20,
+          "reason": "Strongest technology change signal contributes to the account score."
+        },
+        {
+          "key": "PUBLIC_TENDER",
+          "label": "PUBLIC TENDER",
+          "value": 40,
+          "reason": "Strongest public tender signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lmd003wjt6ykzksh4mz",
+          "title": "Veeva to Salesforce transition program referenced in regional roadmap",
+          "description": "Mock technology change feed suggests transition planning around Veeva workflows and Salesforce Life Sciences Cloud.",
+          "signalType": "TECHNOLOGY_CHANGE",
+          "signalTypeLabel": "Technology change",
+          "sourceType": "SEARCH_RESULT",
+          "sourceName": "Mock Technology Change Watch",
+          "sourceUrl": "https://example.com/mock/bayer/veeva-salesforce-roadmap",
+          "detectedAt": "2026-04-10T11:55:23.387Z",
+          "publishedAt": "2026-04-10T11:55:23.387Z",
+          "confidence": 78,
+          "scoreImpact": 20,
+          "evidenceSnippet": "Roadmap language references phased CRM change and field execution implications.",
+          "category": "VEEVA_IQVIA_TRANSITION",
+          "categoryLabel": "Veeva / IQVIA Transition",
+          "recommendedAction": "Position Pitcher as a stabilizing layer for adoption, content, and engagement workflows during transition.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lme003yjt6yaprqkmp7",
+          "title": "Omnichannel engagement transformation highlighted in internal keynote export",
+          "description": "Mock uploaded-export signal points to omnichannel redesign for commercial teams.",
+          "signalType": "PUBLIC_TENDER",
+          "signalTypeLabel": "Public tender",
+          "sourceType": "UPLOADED_EXPORT",
+          "sourceName": "Mock Strategic Initiative Watch",
+          "sourceUrl": "https://example.com/mock/bayer/omnichannel-keynote",
+          "detectedAt": "2026-04-01T11:55:23.387Z",
+          "publishedAt": "2026-04-01T11:55:23.387Z",
+          "confidence": 90,
+          "scoreImpact": 40,
+          "evidenceSnippet": "Message ties customer engagement transformation to execution consistency and analytics.",
+          "category": "OMNICHANNEL",
+          "categoryLabel": "Omnichannel Engagement",
+          "recommendedAction": "Start with a benchmark on omnichannel orchestration and field adoption metrics.",
+          "isInferred": false
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54lm0002qjt6y51xi5gk0",
+          "accountId": "cmoh54lm0002pjt6yi1gpvkph",
+          "name": "Theresa Klein",
+          "title": "Head of Omnichannel Platforms",
+          "function": "Omnichannel",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 89,
+          "suggestedMessageAngle": "Benchmarking platform choices while omnichannel design is still flexible.",
+          "createdAt": "2026-04-27T11:55:23.881Z",
+          "updatedAt": "2026-04-27T11:55:23.881Z"
+        },
+        {
+          "id": "cmoh54lm0002rjt6yumwidx6r",
+          "accountId": "cmoh54lm0002pjt6yi1gpvkph",
+          "name": "Stefan Richter",
+          "title": "Global Director, Salesforce Programs",
+          "function": "Commercial Technology",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 84,
+          "suggestedMessageAngle": "Connecting Life Sciences Cloud programs to field adoption and coaching use cases.",
+          "createdAt": "2026-04-27T11:55:23.881Z",
+          "updatedAt": "2026-04-27T11:55:23.881Z"
+        },
+        {
+          "id": "cmoh54lm0002sjt6ycgw32xcu",
+          "accountId": "cmoh54lm0002pjt6yi1gpvkph",
+          "name": "Lea Zimmer",
+          "title": "Procurement Manager, Commercial Systems",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 74,
+          "suggestedMessageAngle": "Understanding whether an internal benchmark has already narrowed the field.",
+          "createdAt": "2026-04-27T11:55:23.881Z",
+          "updatedAt": "2026-04-27T11:55:23.881Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Move fast to understand whether the shortlist is still open and where field execution gaps remain.",
+        "email": "Subject: Quick benchmark on Bayer's veeva / iqvia transition and omnichannel engagement review\n\nHi Theresa,\n\nIt looks like Bayer may be reviewing veeva / iqvia transition and omnichannel engagement after signals like \"Veeva to Salesforce transition program referenced in regional roadmap\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Bayer may be revisiting veeva / iqvia transition and omnichannel engagement. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Prioritize same-week outreach to the likely program owner and procurement contact."
+      },
+      "missingInformation": [
+        "No explicit competitor or incumbent vendor evidence yet."
+      ],
+      "exports": {
+        "markdown": "# Bayer\n\n- Industry: Pharma\n- Country: Germany\n- Employees: 100000\n- Revenue: $50.7B\n- Stage: Active RFP / Tender\n- Signal score: 90/100\n- Confidence: 94%\n\n## Why this account is ranked here\n\n- TECHNOLOGY CHANGE: +20 — Strongest technology change signal contributes to the account score.\n- PUBLIC TENDER: +40 — Strongest public tender signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n\n## Signals\n\n### Veeva to Salesforce transition program referenced in regional roadmap\n- Type: Technology change\n- Category: Veeva / IQVIA Transition\n- Confidence: 78%\n- Source: Mock Technology Change Watch\n- Published: 2026-04-10T11:55:23.387Z\n- Evidence: Roadmap language references phased CRM change and field execution implications.\n- Action: Position Pitcher as a stabilizing layer for adoption, content, and engagement workflows during transition.\n- URL: https://example.com/mock/bayer/veeva-salesforce-roadmap\n\n### Omnichannel engagement transformation highlighted in internal keynote export\n- Type: Public tender\n- Category: Omnichannel Engagement\n- Confidence: 90%\n- Source: Mock Strategic Initiative Watch\n- Published: 2026-04-01T11:55:23.387Z\n- Evidence: Message ties customer engagement transformation to execution consistency and analytics.\n- Action: Start with a benchmark on omnichannel orchestration and field adoption metrics.\n- URL: https://example.com/mock/bayer/omnichannel-keynote\n\n## Stakeholders\n\n- Theresa Klein, Head of Omnichannel Platforms (Omnichannel) — Benchmarking platform choices while omnichannel design is still flexible.\n- Stefan Richter, Global Director, Salesforce Programs (Commercial Technology) — Connecting Life Sciences Cloud programs to field adoption and coaching use cases.\n- Lea Zimmer, Procurement Manager, Commercial Systems (Procurement) — Understanding whether an internal benchmark has already narrowed the field.\n\n## Outreach angle\n\nMove fast to understand whether the shortlist is still open and where field execution gaps remain.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Bayer's veeva / iqvia transition and omnichannel engagement review\n\nHi Theresa,\n\nIt looks like Bayer may be reviewing veeva / iqvia transition and omnichannel engagement after signals like \"Veeva to Salesforce transition program referenced in regional roadmap\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Bayer may be revisiting veeva / iqvia transition and omnichannel engagement. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No explicit competitor or incumbent vendor evidence yet.\n",
+        "messagesMarkdown": "# Bayer outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Bayer's veeva / iqvia transition and omnichannel engagement review\n\nHi Theresa,\n\nIt looks like Bayer may be reviewing veeva / iqvia transition and omnichannel engagement after signals like \"Veeva to Salesforce transition program referenced in regional roadmap\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Bayer may be revisiting veeva / iqvia transition and omnichannel engagement. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nPrioritize same-week outreach to the likely program owner and procurement contact.\n",
+        "messagesText": "Bayer outreach pack\n\nEmail\nSubject: Quick benchmark on Bayer's veeva / iqvia transition and omnichannel engagement review\n\nHi Theresa,\n\nIt looks like Bayer may be reviewing veeva / iqvia transition and omnichannel engagement after signals like \"Veeva to Salesforce transition program referenced in regional roadmap\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Bayer may be revisiting veeva / iqvia transition and omnichannel engagement. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nPrioritize same-week outreach to the likely program owner and procurement contact."
+      }
+    },
+    {
+      "id": "cmoh54llw0025jt6y9e07sj43",
+      "name": "Novartis",
+      "website": "https://www.novartis.com",
+      "industry": "PHARMA",
+      "industryLabel": "Pharma",
+      "country": "Switzerland",
+      "employeeCount": 78000,
+      "revenue": 45.4,
+      "owner": "Strategic Pharma Pod",
+      "notes": "Ideal account for CLM, omnichannel, and coaching-oriented narratives.",
+      "score": 85,
+      "confidence": 85,
+      "stage": "ACTIVE_RFP",
+      "stageLabel": "Active RFP / Tender",
+      "lastDetectedAt": "2026-04-21T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "HCP_ENGAGEMENT",
+          "label": "HCP Engagement"
+        },
+        {
+          "value": "CONTENT_GOVERNANCE",
+          "label": "Content Governance / DAM"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "DIRECT_PROCUREMENT",
+          "label": "DIRECT PROCUREMENT",
+          "value": 40,
+          "reason": "Strongest direct procurement signal contributes to the account score."
+        },
+        {
+          "key": "VENDOR_SIGNAL",
+          "label": "VENDOR SIGNAL",
+          "value": 15,
+          "reason": "Strongest vendor signal signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lm8003cjt6ykn0c2uui",
+          "title": "Procurement notice for HCP engagement and digital content platform",
+          "description": "A mock procurement notice references vendor evaluation for HCP engagement, digital content delivery, and analytics.",
+          "signalType": "DIRECT_PROCUREMENT",
+          "signalTypeLabel": "Direct procurement",
+          "sourceType": "TENDER_PORTAL",
+          "sourceName": "Mock Public Tender Monitor",
+          "sourceUrl": "https://example.com/mock/novartis/hcp-engagement-tender",
+          "detectedAt": "2026-04-21T11:55:23.387Z",
+          "publishedAt": "2026-04-21T11:55:23.387Z",
+          "confidence": 90,
+          "scoreImpact": 40,
+          "evidenceSnippet": "Evaluation covers HCP engagement workflows, compliant content tracking, and usage analytics.",
+          "category": "HCP_ENGAGEMENT",
+          "categoryLabel": "HCP Engagement",
+          "recommendedAction": "Move quickly to confirm whether the shortlist is still open and which business units are covered.",
+          "isInferred": false
+        },
+        {
+          "id": "cmoh54lm8003ejt6ydzb6o9en",
+          "title": "Competitor reference mentions Seismic pilot in medical affairs adjacent team",
+          "description": "Mock competitor-intel feed suggests Seismic was discussed in a neighboring capability workstream.",
+          "signalType": "VENDOR_SIGNAL",
+          "signalTypeLabel": "Vendor / competitor",
+          "sourceType": "VENDOR_CASE_STUDY",
+          "sourceName": "Mock Vendor / Competitor Intel",
+          "sourceUrl": "https://example.com/mock/novartis/seismic-reference",
+          "detectedAt": "2026-04-11T11:55:23.387Z",
+          "publishedAt": "2026-04-11T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Reference points to pilot learnings around content governance and rep access.",
+          "category": "CONTENT_GOVERNANCE",
+          "categoryLabel": "Content Governance / DAM",
+          "recommendedAction": "Use a competitive-displacement angle and ask whether the same decision criteria apply to field teams.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54llw0026jt6yn6gktels",
+          "accountId": "cmoh54llw0025jt6y9e07sj43",
+          "name": "Clara Meier",
+          "title": "Global Head of Customer Engagement Platforms",
+          "function": "Customer Engagement",
+          "buyingRole": "ECONOMIC_BUYER",
+          "relevanceScore": 93,
+          "suggestedMessageAngle": "Sharing how global teams benchmark HCP engagement stacks before formal procurement concludes.",
+          "createdAt": "2026-04-27T11:55:23.877Z",
+          "updatedAt": "2026-04-27T11:55:23.877Z"
+        },
+        {
+          "id": "cmoh54llw0027jt6yhli47tb3",
+          "accountId": "cmoh54llw0025jt6y9e07sj43",
+          "name": "Lukas Steiner",
+          "title": "Program Lead, Field Force Effectiveness",
+          "function": "Commercial Excellence",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 87,
+          "suggestedMessageAngle": "Improving rep readiness, CRM adoption, and content governance in a single workflow layer.",
+          "createdAt": "2026-04-27T11:55:23.877Z",
+          "updatedAt": "2026-04-27T11:55:23.877Z"
+        },
+        {
+          "id": "cmoh54llw0028jt6y6e92zdsz",
+          "accountId": "cmoh54llw0025jt6y9e07sj43",
+          "name": "Nina Graf",
+          "title": "Procurement Lead, Commercial Applications",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 79,
+          "suggestedMessageAngle": "Confirming whether the shortlist is still open to benchmark vendors.",
+          "createdAt": "2026-04-27T11:55:23.877Z",
+          "updatedAt": "2026-04-27T11:55:23.877Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Move fast to understand whether the shortlist is still open and where field execution gaps remain.",
+        "email": "Subject: Quick benchmark on Novartis's hcp engagement and content governance / dam review\n\nHi Clara,\n\nIt looks like Novartis may be reviewing hcp engagement and content governance / dam after signals like \"Procurement notice for HCP engagement and digital content platform\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Novartis may be revisiting hcp engagement and content governance / dam. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Prioritize same-week outreach to the likely program owner and procurement contact."
+      },
+      "missingInformation": [],
+      "exports": {
+        "markdown": "# Novartis\n\n- Industry: Pharma\n- Country: Switzerland\n- Employees: 78000\n- Revenue: $45.4B\n- Stage: Active RFP / Tender\n- Signal score: 85/100\n- Confidence: 85%\n\n## Why this account is ranked here\n\n- DIRECT PROCUREMENT: +40 — Strongest direct procurement signal contributes to the account score.\n- VENDOR SIGNAL: +15 — Strongest vendor signal signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n\n## Signals\n\n### Procurement notice for HCP engagement and digital content platform\n- Type: Direct procurement\n- Category: HCP Engagement\n- Confidence: 90%\n- Source: Mock Public Tender Monitor\n- Published: 2026-04-21T11:55:23.387Z\n- Evidence: Evaluation covers HCP engagement workflows, compliant content tracking, and usage analytics.\n- Action: Move quickly to confirm whether the shortlist is still open and which business units are covered.\n- URL: https://example.com/mock/novartis/hcp-engagement-tender\n\n### Competitor reference mentions Seismic pilot in medical affairs adjacent team\n- Type: Vendor / competitor\n- Category: Content Governance / DAM\n- Confidence: 60%\n- Source: Mock Vendor / Competitor Intel\n- Published: 2026-04-11T11:55:23.387Z\n- Evidence: Reference points to pilot learnings around content governance and rep access.\n- Action: Use a competitive-displacement angle and ask whether the same decision criteria apply to field teams.\n- URL: https://example.com/mock/novartis/seismic-reference\n\n## Stakeholders\n\n- Clara Meier, Global Head of Customer Engagement Platforms (Customer Engagement) — Sharing how global teams benchmark HCP engagement stacks before formal procurement concludes.\n- Lukas Steiner, Program Lead, Field Force Effectiveness (Commercial Excellence) — Improving rep readiness, CRM adoption, and content governance in a single workflow layer.\n- Nina Graf, Procurement Lead, Commercial Applications (Procurement) — Confirming whether the shortlist is still open to benchmark vendors.\n\n## Outreach angle\n\nMove fast to understand whether the shortlist is still open and where field execution gaps remain.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Novartis's hcp engagement and content governance / dam review\n\nHi Clara,\n\nIt looks like Novartis may be reviewing hcp engagement and content governance / dam after signals like \"Procurement notice for HCP engagement and digital content platform\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Novartis may be revisiting hcp engagement and content governance / dam. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n",
+        "messagesMarkdown": "# Novartis outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Novartis's hcp engagement and content governance / dam review\n\nHi Clara,\n\nIt looks like Novartis may be reviewing hcp engagement and content governance / dam after signals like \"Procurement notice for HCP engagement and digital content platform\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Novartis may be revisiting hcp engagement and content governance / dam. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nPrioritize same-week outreach to the likely program owner and procurement contact.\n",
+        "messagesText": "Novartis outreach pack\n\nEmail\nSubject: Quick benchmark on Novartis's hcp engagement and content governance / dam review\n\nHi Clara,\n\nIt looks like Novartis may be reviewing hcp engagement and content governance / dam after signals like \"Procurement notice for HCP engagement and digital content platform\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Novartis may be revisiting hcp engagement and content governance / dam. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nPrioritize same-week outreach to the likely program owner and procurement contact."
+      }
+    },
+    {
+      "id": "cmoh54llt001tjt6y9k431jsf",
+      "name": "Philips",
+      "website": "https://www.philips.com",
+      "industry": "MEDTECH",
+      "industryLabel": "Medtech",
+      "country": "Netherlands",
+      "employeeCount": 68000,
+      "revenue": 19.4,
+      "owner": "EMEA Medtech Pod",
+      "notes": "Large enterprise account with field-heavy clinical and commercial motions.",
+      "score": 80,
+      "confidence": 85,
+      "stage": "ACTIVE_EVALUATION",
+      "stageLabel": "Active evaluation",
+      "lastDetectedAt": "2026-04-15T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "FIELD_ENABLEMENT",
+          "label": "Field Enablement"
+        },
+        {
+          "value": "CRM_ADOPTION",
+          "label": "CRM Adoption"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "DIRECT_PROCUREMENT",
+          "label": "DIRECT PROCUREMENT",
+          "value": 40,
+          "reason": "Strongest direct procurement signal contributes to the account score."
+        },
+        {
+          "key": "STRATEGIC_INITIATIVE",
+          "label": "STRATEGIC INITIATIVE",
+          "value": 10,
+          "reason": "Strongest strategic initiative signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lm4002yjt6ytz9oglkz",
+          "title": "Procurement notice for digital field engagement platform review",
+          "description": "A mock public-sector purchasing signal references vendor selection support for field engagement, content control, and mobile presentation workflows.",
+          "signalType": "DIRECT_PROCUREMENT",
+          "signalTypeLabel": "Direct procurement",
+          "sourceType": "TENDER_PORTAL",
+          "sourceName": "Mock Public Tender Monitor",
+          "sourceUrl": "https://example.com/mock/philips/procurement-field-engagement",
+          "detectedAt": "2026-04-15T11:55:23.387Z",
+          "publishedAt": "2026-04-15T11:55:23.387Z",
+          "confidence": 90,
+          "scoreImpact": 40,
+          "evidenceSnippet": "Vendor review mentions mobile field engagement, content governance, and CRM workflow integration.",
+          "category": "FIELD_ENABLEMENT",
+          "categoryLabel": "Field Enablement",
+          "recommendedAction": "Confirm whether the review covers the same field teams that use HCP or clinical-commercial engagement tools.",
+          "isInferred": false
+        },
+        {
+          "id": "cmoh54lm50030jt6yqlq5wsmc",
+          "title": "CRM and field content workflow consolidation initiative",
+          "description": "Mock monitoring suggests Philips is aligning CRM workflows, rep content delivery, and offline field execution requirements.",
+          "signalType": "STRATEGIC_INITIATIVE",
+          "signalTypeLabel": "Strategic initiative",
+          "sourceType": "COMPANY_SITE",
+          "sourceName": "Mock Technology Change Watch",
+          "sourceUrl": "https://example.com/mock/philips/crm-field-workflows",
+          "detectedAt": "2026-03-30T11:55:23.387Z",
+          "publishedAt": "2026-03-30T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 10,
+          "evidenceSnippet": "References consolidation of CRM-facing field content and guided workflows.",
+          "category": "CRM_ADOPTION",
+          "categoryLabel": "CRM Adoption",
+          "recommendedAction": "Lead with workflow simplification and offline/mobile field execution.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54llt001ujt6ymhxi6doh",
+          "accountId": "cmoh54llt001tjt6y9k431jsf",
+          "name": "Eva van Dijk",
+          "title": "Head of Commercial Excellence, International Region",
+          "function": "Commercial Excellence",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 91,
+          "suggestedMessageAngle": "Benchmarking field execution and compliant content workflows before platform decisions harden.",
+          "createdAt": "2026-04-27T11:55:23.873Z",
+          "updatedAt": "2026-04-27T11:55:23.873Z"
+        },
+        {
+          "id": "cmoh54llt001vjt6yjhhcikkn",
+          "accountId": "cmoh54llt001tjt6y9k431jsf",
+          "name": "Tom Rensen",
+          "title": "Director, CRM and Field Engagement",
+          "function": "Commercial Technology",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 88,
+          "suggestedMessageAngle": "Reducing friction across CRM, mobile field workflows, and HCP engagement.",
+          "createdAt": "2026-04-27T11:55:23.873Z",
+          "updatedAt": "2026-04-27T11:55:23.873Z"
+        },
+        {
+          "id": "cmoh54llt001wjt6y6brlxdp6",
+          "accountId": "cmoh54llt001tjt6y9k431jsf",
+          "name": "Marit Koster",
+          "title": "Category Manager, Customer Platforms",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 78,
+          "suggestedMessageAngle": "Confirming if a benchmark shortlist is already taking shape.",
+          "createdAt": "2026-04-27T11:55:23.873Z",
+          "updatedAt": "2026-04-27T11:55:23.873Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Position Pitcher as a benchmark option while evaluation criteria are still flexible.",
+        "email": "Subject: Quick benchmark on Philips's field enablement and crm adoption review\n\nHi Eva,\n\nIt looks like Philips may be reviewing field enablement and crm adoption after signals like \"Procurement notice for digital field engagement platform review\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Philips may be revisiting field enablement and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Reach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      },
+      "missingInformation": [
+        "No explicit competitor or incumbent vendor evidence yet."
+      ],
+      "exports": {
+        "markdown": "# Philips\n\n- Industry: Medtech\n- Country: Netherlands\n- Employees: 68000\n- Revenue: $19.4B\n- Stage: Active evaluation\n- Signal score: 80/100\n- Confidence: 85%\n\n## Why this account is ranked here\n\n- DIRECT PROCUREMENT: +40 — Strongest direct procurement signal contributes to the account score.\n- STRATEGIC INITIATIVE: +10 — Strongest strategic initiative signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n\n## Signals\n\n### Procurement notice for digital field engagement platform review\n- Type: Direct procurement\n- Category: Field Enablement\n- Confidence: 90%\n- Source: Mock Public Tender Monitor\n- Published: 2026-04-15T11:55:23.387Z\n- Evidence: Vendor review mentions mobile field engagement, content governance, and CRM workflow integration.\n- Action: Confirm whether the review covers the same field teams that use HCP or clinical-commercial engagement tools.\n- URL: https://example.com/mock/philips/procurement-field-engagement\n\n### CRM and field content workflow consolidation initiative\n- Type: Strategic initiative\n- Category: CRM Adoption\n- Confidence: 60%\n- Source: Mock Technology Change Watch\n- Published: 2026-03-30T11:55:23.387Z\n- Evidence: References consolidation of CRM-facing field content and guided workflows.\n- Action: Lead with workflow simplification and offline/mobile field execution.\n- URL: https://example.com/mock/philips/crm-field-workflows\n\n## Stakeholders\n\n- Eva van Dijk, Head of Commercial Excellence, International Region (Commercial Excellence) — Benchmarking field execution and compliant content workflows before platform decisions harden.\n- Tom Rensen, Director, CRM and Field Engagement (Commercial Technology) — Reducing friction across CRM, mobile field workflows, and HCP engagement.\n- Marit Koster, Category Manager, Customer Platforms (Procurement) — Confirming if a benchmark shortlist is already taking shape.\n\n## Outreach angle\n\nPosition Pitcher as a benchmark option while evaluation criteria are still flexible.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Philips's field enablement and crm adoption review\n\nHi Eva,\n\nIt looks like Philips may be reviewing field enablement and crm adoption after signals like \"Procurement notice for digital field engagement platform review\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Philips may be revisiting field enablement and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No explicit competitor or incumbent vendor evidence yet.\n",
+        "messagesMarkdown": "# Philips outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Philips's field enablement and crm adoption review\n\nHi Eva,\n\nIt looks like Philips may be reviewing field enablement and crm adoption after signals like \"Procurement notice for digital field engagement platform review\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Philips may be revisiting field enablement and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted.\n",
+        "messagesText": "Philips outreach pack\n\nEmail\nSubject: Quick benchmark on Philips's field enablement and crm adoption review\n\nHi Eva,\n\nIt looks like Philips may be reviewing field enablement and crm adoption after signals like \"Procurement notice for digital field engagement platform review\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Philips may be revisiting field enablement and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      }
+    },
+    {
+      "id": "cmoh54llv001xjt6y4icfgqes",
+      "name": "Merck Healthcare",
+      "website": "https://www.merckgroup.com",
+      "industry": "PHARMA",
+      "industryLabel": "Pharma",
+      "country": "Germany",
+      "employeeCount": 62000,
+      "revenue": 22.1,
+      "owner": "DACH Pharma Pod",
+      "notes": "Good fit for commercial excellence, omnichannel, and CRM-adoption stories.",
+      "score": 65,
+      "confidence": 62,
+      "stage": "ACTIVE_EVALUATION",
+      "stageLabel": "Active evaluation",
+      "lastDetectedAt": "2026-04-09T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "COMMERCIAL_EXCELLENCE",
+          "label": "Commercial Excellence"
+        },
+        {
+          "value": "VEEVA_IQVIA_TRANSITION",
+          "label": "Veeva / IQVIA Transition"
+        },
+        {
+          "value": "OMNICHANNEL",
+          "label": "Omnichannel Engagement"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "HIRING",
+          "label": "HIRING",
+          "value": 15,
+          "reason": "Strongest hiring signal contributes to the account score."
+        },
+        {
+          "key": "TECHNOLOGY_CHANGE",
+          "label": "TECHNOLOGY CHANGE",
+          "value": 20,
+          "reason": "Strongest technology change signal contributes to the account score."
+        },
+        {
+          "key": "STRATEGIC_INITIATIVE",
+          "label": "STRATEGIC INITIATIVE",
+          "value": 10,
+          "reason": "Strongest strategic initiative signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        },
+        {
+          "key": "ambiguity_penalty",
+          "label": "Ambiguity penalty",
+          "value": -10,
+          "reason": "All signals are inferred and none directly mention procurement."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lm50032jt6yfcefagp0",
+          "title": "Hiring: Global Commercial Excellence Lead",
+          "description": "Mock job-post export highlights commercial excellence ownership across omnichannel execution, field force effectiveness, and launch readiness.",
+          "signalType": "HIRING",
+          "signalTypeLabel": "Hiring",
+          "sourceType": "JOB_POSTING",
+          "sourceName": "Mock Hiring Feed",
+          "sourceUrl": "https://example.com/mock/merck-healthcare/global-commercial-excellence-lead",
+          "detectedAt": "2026-04-09T11:55:23.387Z",
+          "publishedAt": "2026-04-09T11:55:23.387Z",
+          "confidence": 72,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Role calls for field force effectiveness, capability-building, and cross-market execution standards.",
+          "category": "COMMERCIAL_EXCELLENCE",
+          "categoryLabel": "Commercial Excellence",
+          "recommendedAction": "Reach out to learn whether the role inherits a vendor review already in motion.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lm60034jt6yeedmjae4",
+          "title": "Program note mentions Veeva to Salesforce transition planning",
+          "description": "Mock signal from a technology watch feed suggests planning around Veeva, Salesforce, and content workflow redesign.",
+          "signalType": "TECHNOLOGY_CHANGE",
+          "signalTypeLabel": "Technology change",
+          "sourceType": "SEARCH_RESULT",
+          "sourceName": "Mock Technology Change Watch",
+          "sourceUrl": "https://example.com/mock/merck-healthcare/veeva-salesforce-transition",
+          "detectedAt": "2026-04-04T11:55:23.387Z",
+          "publishedAt": "2026-04-04T11:55:23.387Z",
+          "confidence": 78,
+          "scoreImpact": 20,
+          "evidenceSnippet": "Mentions phased CRM design decisions and affiliate workflow harmonization.",
+          "category": "VEEVA_IQVIA_TRANSITION",
+          "categoryLabel": "Veeva / IQVIA Transition",
+          "recommendedAction": "Lead with how Pitcher sits across CRM adoption, content, and field execution without forcing rip-and-replace assumptions.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lm60036jt6ybvkubf6v",
+          "title": "Press mention of omnichannel customer engagement transformation",
+          "description": "Mock press-monitoring feed highlights a broader omnichannel and HCP engagement modernization program.",
+          "signalType": "STRATEGIC_INITIATIVE",
+          "signalTypeLabel": "Strategic initiative",
+          "sourceType": "PRESS_RELEASE",
+          "sourceName": "Mock Strategic Initiative Watch",
+          "sourceUrl": "https://example.com/mock/merck-healthcare/omnichannel-transformation",
+          "detectedAt": "2026-03-24T11:55:23.387Z",
+          "publishedAt": "2026-03-24T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 10,
+          "evidenceSnippet": "Language points to customer engagement redesign rather than isolated channel tactics.",
+          "category": "OMNICHANNEL",
+          "categoryLabel": "Omnichannel Engagement",
+          "recommendedAction": "Frame Pitcher as a benchmark for connected field engagement and compliant content usage.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54llv001yjt6yzitjuhmq",
+          "accountId": "cmoh54llv001xjt6y4icfgqes",
+          "name": "Johanna Weiss",
+          "title": "VP Commercial Excellence",
+          "function": "Commercial Excellence",
+          "buyingRole": "ECONOMIC_BUYER",
+          "relevanceScore": 98,
+          "suggestedMessageAngle": "Helping affiliates compare field execution, HCP engagement, and coaching layers before global design choices lock in.",
+          "createdAt": "2026-04-27T11:55:23.875Z",
+          "updatedAt": "2026-04-27T11:55:23.875Z"
+        },
+        {
+          "id": "cmoh54llv001zjt6y2mdgt2gf",
+          "accountId": "cmoh54llv001xjt6y4icfgqes",
+          "name": "Sven Reiter",
+          "title": "Global CRM Program Director",
+          "function": "Commercial Technology",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 92,
+          "suggestedMessageAngle": "Aligning Salesforce, Veeva, and field enablement workflows into one operating motion.",
+          "createdAt": "2026-04-27T11:55:23.875Z",
+          "updatedAt": "2026-04-27T11:55:23.875Z"
+        },
+        {
+          "id": "cmoh54llv0020jt6ydsrb07tc",
+          "accountId": "cmoh54llv001xjt6y4icfgqes",
+          "name": "Anna Hoffmann",
+          "title": "Category Lead, Commercial Systems",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 68,
+          "suggestedMessageAngle": "Understanding whether supplier discovery is still open or already narrowed.",
+          "createdAt": "2026-04-27T11:55:23.875Z",
+          "updatedAt": "2026-04-27T11:55:23.875Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Position Pitcher as a benchmark option while evaluation criteria are still flexible.",
+        "email": "Subject: Quick benchmark on Merck Healthcare's commercial excellence and veeva / iqvia transition review\n\nHi Johanna,\n\nIt looks like Merck Healthcare may be reviewing commercial excellence and veeva / iqvia transition after signals like \"Hiring: Global Commercial Excellence Lead\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Merck Healthcare may be revisiting commercial excellence and veeva / iqvia transition. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Reach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      },
+      "missingInformation": [
+        "No confirmed procurement notice yet.",
+        "No explicit competitor or incumbent vendor evidence yet.",
+        "Most evidence is inferred rather than directly confirmed."
+      ],
+      "exports": {
+        "markdown": "# Merck Healthcare\n\n- Industry: Pharma\n- Country: Germany\n- Employees: 62000\n- Revenue: $22.1B\n- Stage: Active evaluation\n- Signal score: 65/100\n- Confidence: 62%\n\n## Why this account is ranked here\n\n- HIRING: +15 — Strongest hiring signal contributes to the account score.\n- TECHNOLOGY CHANGE: +20 — Strongest technology change signal contributes to the account score.\n- STRATEGIC INITIATIVE: +10 — Strongest strategic initiative signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n- Ambiguity penalty: -10 — All signals are inferred and none directly mention procurement.\n\n## Signals\n\n### Hiring: Global Commercial Excellence Lead\n- Type: Hiring\n- Category: Commercial Excellence\n- Confidence: 72%\n- Source: Mock Hiring Feed\n- Published: 2026-04-09T11:55:23.387Z\n- Evidence: Role calls for field force effectiveness, capability-building, and cross-market execution standards.\n- Action: Reach out to learn whether the role inherits a vendor review already in motion.\n- URL: https://example.com/mock/merck-healthcare/global-commercial-excellence-lead\n\n### Program note mentions Veeva to Salesforce transition planning\n- Type: Technology change\n- Category: Veeva / IQVIA Transition\n- Confidence: 78%\n- Source: Mock Technology Change Watch\n- Published: 2026-04-04T11:55:23.387Z\n- Evidence: Mentions phased CRM design decisions and affiliate workflow harmonization.\n- Action: Lead with how Pitcher sits across CRM adoption, content, and field execution without forcing rip-and-replace assumptions.\n- URL: https://example.com/mock/merck-healthcare/veeva-salesforce-transition\n\n### Press mention of omnichannel customer engagement transformation\n- Type: Strategic initiative\n- Category: Omnichannel Engagement\n- Confidence: 60%\n- Source: Mock Strategic Initiative Watch\n- Published: 2026-03-24T11:55:23.387Z\n- Evidence: Language points to customer engagement redesign rather than isolated channel tactics.\n- Action: Frame Pitcher as a benchmark for connected field engagement and compliant content usage.\n- URL: https://example.com/mock/merck-healthcare/omnichannel-transformation\n\n## Stakeholders\n\n- Johanna Weiss, VP Commercial Excellence (Commercial Excellence) — Helping affiliates compare field execution, HCP engagement, and coaching layers before global design choices lock in.\n- Sven Reiter, Global CRM Program Director (Commercial Technology) — Aligning Salesforce, Veeva, and field enablement workflows into one operating motion.\n- Anna Hoffmann, Category Lead, Commercial Systems (Procurement) — Understanding whether supplier discovery is still open or already narrowed.\n\n## Outreach angle\n\nPosition Pitcher as a benchmark option while evaluation criteria are still flexible.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Merck Healthcare's commercial excellence and veeva / iqvia transition review\n\nHi Johanna,\n\nIt looks like Merck Healthcare may be reviewing commercial excellence and veeva / iqvia transition after signals like \"Hiring: Global Commercial Excellence Lead\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Merck Healthcare may be revisiting commercial excellence and veeva / iqvia transition. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No confirmed procurement notice yet.\n- No explicit competitor or incumbent vendor evidence yet.\n- Most evidence is inferred rather than directly confirmed.\n",
+        "messagesMarkdown": "# Merck Healthcare outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Merck Healthcare's commercial excellence and veeva / iqvia transition review\n\nHi Johanna,\n\nIt looks like Merck Healthcare may be reviewing commercial excellence and veeva / iqvia transition after signals like \"Hiring: Global Commercial Excellence Lead\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Merck Healthcare may be revisiting commercial excellence and veeva / iqvia transition. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted.\n",
+        "messagesText": "Merck Healthcare outreach pack\n\nEmail\nSubject: Quick benchmark on Merck Healthcare's commercial excellence and veeva / iqvia transition review\n\nHi Johanna,\n\nIt looks like Merck Healthcare may be reviewing commercial excellence and veeva / iqvia transition after signals like \"Hiring: Global Commercial Excellence Lead\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Merck Healthcare may be revisiting commercial excellence and veeva / iqvia transition. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      }
+    },
+    {
+      "id": "cmoh54lm0002ljt6ysmertoxm",
+      "name": "Roche",
+      "website": "https://www.roche.com",
+      "industry": "PHARMA",
+      "industryLabel": "Pharma",
+      "country": "Switzerland",
+      "employeeCount": 103000,
+      "revenue": 67.4,
+      "owner": "Strategic Pharma Pod",
+      "notes": "Very large account, but still useful for AI coaching and omnichannel monitoring in the demo.",
+      "score": 50,
+      "confidence": 58,
+      "stage": "PRE_RFP",
+      "stageLabel": "Pre-RFP",
+      "lastDetectedAt": "2026-04-14T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "AI_COACHING",
+          "label": "AI Coaching / Roleplay"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "HIRING",
+          "label": "HIRING",
+          "value": 15,
+          "reason": "Strongest hiring signal contributes to the account score."
+        },
+        {
+          "key": "VENDOR_SIGNAL",
+          "label": "VENDOR SIGNAL",
+          "value": 15,
+          "reason": "Strongest vendor signal signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        },
+        {
+          "key": "ambiguity_penalty",
+          "label": "Ambiguity penalty",
+          "value": -10,
+          "reason": "All signals are inferred and none directly mention procurement."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lmc003sjt6yx12kz2ga",
+          "title": "Hiring: AI Commercial Capability Director",
+          "description": "Mock job-post signal points to AI coaching, rep readiness, and field-manager capability priorities.",
+          "signalType": "HIRING",
+          "signalTypeLabel": "Hiring",
+          "sourceType": "JOB_POSTING",
+          "sourceName": "Mock Hiring Feed",
+          "sourceUrl": "https://example.com/mock/roche/ai-commercial-capability",
+          "detectedAt": "2026-04-14T11:55:23.387Z",
+          "publishedAt": "2026-04-14T11:55:23.387Z",
+          "confidence": 72,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Role covers AI coaching, capability development, and field adoption metrics.",
+          "category": "AI_COACHING",
+          "categoryLabel": "AI Coaching / Roleplay",
+          "recommendedAction": "Open with AI roleplay and coaching use cases that plug into existing field workflows.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lmd003ujt6yixm2w14p",
+          "title": "Partner note references Mindtickle evaluation for coaching",
+          "description": "Mock partner monitoring suggests Mindtickle surfaced in a capability-platform review.",
+          "signalType": "VENDOR_SIGNAL",
+          "signalTypeLabel": "Vendor / competitor",
+          "sourceType": "PARTNER_NEWS",
+          "sourceName": "Mock Vendor / Competitor Intel",
+          "sourceUrl": "https://example.com/mock/roche/mindtickle-evaluation",
+          "detectedAt": "2026-04-03T11:55:23.387Z",
+          "publishedAt": "2026-04-03T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Signal ties AI coaching evaluation to broader field execution measures.",
+          "category": "AI_COACHING",
+          "categoryLabel": "AI Coaching / Roleplay",
+          "recommendedAction": "Use a competitive benchmark angle and tie coaching to broader field execution and HCP engagement.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54lm0002mjt6y8gsdp0dv",
+          "accountId": "cmoh54lm0002ljt6ysmertoxm",
+          "name": "Sabine Keller",
+          "title": "Global Lead, Commercial Capability",
+          "function": "Commercial Capability",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 91,
+          "suggestedMessageAngle": "Supporting capability programs with AI coaching and measurable field execution lift.",
+          "createdAt": "2026-04-27T11:55:23.880Z",
+          "updatedAt": "2026-04-27T11:55:23.880Z"
+        },
+        {
+          "id": "cmoh54lm0002njt6yl9ncnqbo",
+          "accountId": "cmoh54lm0002ljt6ysmertoxm",
+          "name": "Peter Albrecht",
+          "title": "Head of CRM Transformation",
+          "function": "Commercial Technology",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 86,
+          "suggestedMessageAngle": "Integrating coaching, engagement, and CRM workflows without adding stack friction.",
+          "createdAt": "2026-04-27T11:55:23.880Z",
+          "updatedAt": "2026-04-27T11:55:23.880Z"
+        },
+        {
+          "id": "cmoh54lm0002ojt6ytsksbsq0",
+          "accountId": "cmoh54lm0002ljt6ysmertoxm",
+          "name": "Isabelle Moser",
+          "title": "Senior Procurement Manager, Digital",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 67,
+          "suggestedMessageAngle": "Checking if capability-platform discovery is still open.",
+          "createdAt": "2026-04-27T11:55:23.880Z",
+          "updatedAt": "2026-04-27T11:55:23.880Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Help the team shape vendor criteria before a formal process starts around AI Coaching / Roleplay.",
+        "email": "Subject: Quick benchmark on Roche's ai coaching / roleplay review\n\nHi Sabine,\n\nIt looks like Roche may be reviewing ai coaching / roleplay after signals like \"Hiring: AI Commercial Capability Director\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Roche may be revisiting ai coaching / roleplay. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Reach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      },
+      "missingInformation": [
+        "No confirmed procurement notice yet.",
+        "Most evidence is inferred rather than directly confirmed."
+      ],
+      "exports": {
+        "markdown": "# Roche\n\n- Industry: Pharma\n- Country: Switzerland\n- Employees: 103000\n- Revenue: $67.4B\n- Stage: Pre-RFP\n- Signal score: 50/100\n- Confidence: 58%\n\n## Why this account is ranked here\n\n- HIRING: +15 — Strongest hiring signal contributes to the account score.\n- VENDOR SIGNAL: +15 — Strongest vendor signal signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n- Ambiguity penalty: -10 — All signals are inferred and none directly mention procurement.\n\n## Signals\n\n### Hiring: AI Commercial Capability Director\n- Type: Hiring\n- Category: AI Coaching / Roleplay\n- Confidence: 72%\n- Source: Mock Hiring Feed\n- Published: 2026-04-14T11:55:23.387Z\n- Evidence: Role covers AI coaching, capability development, and field adoption metrics.\n- Action: Open with AI roleplay and coaching use cases that plug into existing field workflows.\n- URL: https://example.com/mock/roche/ai-commercial-capability\n\n### Partner note references Mindtickle evaluation for coaching\n- Type: Vendor / competitor\n- Category: AI Coaching / Roleplay\n- Confidence: 60%\n- Source: Mock Vendor / Competitor Intel\n- Published: 2026-04-03T11:55:23.387Z\n- Evidence: Signal ties AI coaching evaluation to broader field execution measures.\n- Action: Use a competitive benchmark angle and tie coaching to broader field execution and HCP engagement.\n- URL: https://example.com/mock/roche/mindtickle-evaluation\n\n## Stakeholders\n\n- Sabine Keller, Global Lead, Commercial Capability (Commercial Capability) — Supporting capability programs with AI coaching and measurable field execution lift.\n- Peter Albrecht, Head of CRM Transformation (Commercial Technology) — Integrating coaching, engagement, and CRM workflows without adding stack friction.\n- Isabelle Moser, Senior Procurement Manager, Digital (Procurement) — Checking if capability-platform discovery is still open.\n\n## Outreach angle\n\nHelp the team shape vendor criteria before a formal process starts around AI Coaching / Roleplay.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Roche's ai coaching / roleplay review\n\nHi Sabine,\n\nIt looks like Roche may be reviewing ai coaching / roleplay after signals like \"Hiring: AI Commercial Capability Director\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Roche may be revisiting ai coaching / roleplay. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No confirmed procurement notice yet.\n- Most evidence is inferred rather than directly confirmed.\n",
+        "messagesMarkdown": "# Roche outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Roche's ai coaching / roleplay review\n\nHi Sabine,\n\nIt looks like Roche may be reviewing ai coaching / roleplay after signals like \"Hiring: AI Commercial Capability Director\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Roche may be revisiting ai coaching / roleplay. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted.\n",
+        "messagesText": "Roche outreach pack\n\nEmail\nSubject: Quick benchmark on Roche's ai coaching / roleplay review\n\nHi Sabine,\n\nIt looks like Roche may be reviewing ai coaching / roleplay after signals like \"Hiring: AI Commercial Capability Director\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Roche may be revisiting ai coaching / roleplay. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      }
+    },
+    {
+      "id": "cmoh54llw0021jt6yyw3845f1",
+      "name": "Novo Nordisk",
+      "website": "https://www.novonordisk.com",
+      "industry": "PHARMA",
+      "industryLabel": "Pharma",
+      "country": "Denmark",
+      "employeeCount": 66000,
+      "revenue": 33.6,
+      "owner": "Nordics Pharma Pod",
+      "notes": "Strong fit for HCP engagement, Salesforce Life Sciences Cloud, and field coaching motions.",
+      "score": 45,
+      "confidence": 58,
+      "stage": "PRE_RFP",
+      "stageLabel": "Pre-RFP",
+      "lastDetectedAt": "2026-04-18T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "SALESFORCE_LIFE_SCIENCES",
+          "label": "Salesforce Life Sciences Cloud"
+        },
+        {
+          "value": "COMMERCIAL_EXCELLENCE",
+          "label": "Commercial Excellence"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "HIRING",
+          "label": "HIRING",
+          "value": 15,
+          "reason": "Strongest hiring signal contributes to the account score."
+        },
+        {
+          "key": "STRATEGIC_INITIATIVE",
+          "label": "STRATEGIC INITIATIVE",
+          "value": 10,
+          "reason": "Strongest strategic initiative signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        },
+        {
+          "key": "ambiguity_penalty",
+          "label": "Ambiguity penalty",
+          "value": -10,
+          "reason": "All signals are inferred and none directly mention procurement."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lm70038jt6y3nsnfipu",
+          "title": "Job post mentions Salesforce Life Sciences Cloud capability build",
+          "description": "Mock ATS export references a team building Salesforce Life Sciences Cloud capabilities for global field teams.",
+          "signalType": "HIRING",
+          "signalTypeLabel": "Hiring",
+          "sourceType": "JOB_POSTING",
+          "sourceName": "Mock Hiring Feed",
+          "sourceUrl": "https://example.com/mock/novo-nordisk/life-sciences-cloud-capability",
+          "detectedAt": "2026-04-18T11:55:23.387Z",
+          "publishedAt": "2026-04-18T11:55:23.387Z",
+          "confidence": 72,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Role scope includes CRM workflow adoption, field coaching, and compliant engagement.",
+          "category": "SALESFORCE_LIFE_SCIENCES",
+          "categoryLabel": "Salesforce Life Sciences Cloud",
+          "recommendedAction": "Approach as a benchmark on field adoption and HCP engagement on top of CRM change.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lm7003ajt6y7ugbyw0s",
+          "title": "Field force effectiveness initiative referenced in leadership post",
+          "description": "Mock uploaded social export references a field force effectiveness initiative spanning commercial capability and HCP engagement.",
+          "signalType": "STRATEGIC_INITIATIVE",
+          "signalTypeLabel": "Strategic initiative",
+          "sourceType": "UPLOADED_EXPORT",
+          "sourceName": "Mock Strategic Initiative Watch",
+          "sourceUrl": "https://example.com/mock/novo-nordisk/field-force-effectiveness",
+          "detectedAt": "2026-03-31T11:55:23.387Z",
+          "publishedAt": "2026-03-31T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 10,
+          "evidenceSnippet": "Highlights rep productivity, manager coaching, and omnichannel consistency.",
+          "category": "COMMERCIAL_EXCELLENCE",
+          "categoryLabel": "Commercial Excellence",
+          "recommendedAction": "Position Pitcher as a benchmark for coaching, content, and rep execution in one workflow.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54llw0023jt6y5djxgk9k",
+          "accountId": "cmoh54llw0021jt6yyw3845f1",
+          "name": "Helene Boe",
+          "title": "Senior Director, Commercial Technology",
+          "function": "Commercial Technology",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 90,
+          "suggestedMessageAngle": "Connecting CRM programs to rep readiness and compliant content usage.",
+          "createdAt": "2026-04-27T11:55:23.876Z",
+          "updatedAt": "2026-04-27T11:55:23.876Z"
+        },
+        {
+          "id": "cmoh54llw0022jt6yse3bwkmi",
+          "accountId": "cmoh54llw0021jt6yyw3845f1",
+          "name": "Mads Kristensen",
+          "title": "Director, Omnichannel Capability",
+          "function": "Omnichannel",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 89,
+          "suggestedMessageAngle": "Comparing HCP engagement and field orchestration approaches before vendor criteria are finalized.",
+          "createdAt": "2026-04-27T11:55:23.876Z",
+          "updatedAt": "2026-04-27T11:55:23.876Z"
+        },
+        {
+          "id": "cmoh54llw0024jt6yt9nls1i5",
+          "accountId": "cmoh54llw0021jt6yyw3845f1",
+          "name": "Jonas Lund",
+          "title": "Head of Procurement, Digital Platforms",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 64,
+          "suggestedMessageAngle": "Checking if a formal sourcing path is likely or still forming.",
+          "createdAt": "2026-04-27T11:55:23.876Z",
+          "updatedAt": "2026-04-27T11:55:23.876Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Help the team shape vendor criteria before a formal process starts around Salesforce Life Sciences Cloud and Commercial Excellence.",
+        "email": "Subject: Quick benchmark on Novo Nordisk's salesforce life sciences cloud and commercial excellence review\n\nHi Helene,\n\nIt looks like Novo Nordisk may be reviewing salesforce life sciences cloud and commercial excellence after signals like \"Job post mentions Salesforce Life Sciences Cloud capability build\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Novo Nordisk may be revisiting salesforce life sciences cloud and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Reach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      },
+      "missingInformation": [
+        "No confirmed procurement notice yet.",
+        "No explicit competitor or incumbent vendor evidence yet.",
+        "Most evidence is inferred rather than directly confirmed."
+      ],
+      "exports": {
+        "markdown": "# Novo Nordisk\n\n- Industry: Pharma\n- Country: Denmark\n- Employees: 66000\n- Revenue: $33.6B\n- Stage: Pre-RFP\n- Signal score: 45/100\n- Confidence: 58%\n\n## Why this account is ranked here\n\n- HIRING: +15 — Strongest hiring signal contributes to the account score.\n- STRATEGIC INITIATIVE: +10 — Strongest strategic initiative signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n- Ambiguity penalty: -10 — All signals are inferred and none directly mention procurement.\n\n## Signals\n\n### Job post mentions Salesforce Life Sciences Cloud capability build\n- Type: Hiring\n- Category: Salesforce Life Sciences Cloud\n- Confidence: 72%\n- Source: Mock Hiring Feed\n- Published: 2026-04-18T11:55:23.387Z\n- Evidence: Role scope includes CRM workflow adoption, field coaching, and compliant engagement.\n- Action: Approach as a benchmark on field adoption and HCP engagement on top of CRM change.\n- URL: https://example.com/mock/novo-nordisk/life-sciences-cloud-capability\n\n### Field force effectiveness initiative referenced in leadership post\n- Type: Strategic initiative\n- Category: Commercial Excellence\n- Confidence: 60%\n- Source: Mock Strategic Initiative Watch\n- Published: 2026-03-31T11:55:23.387Z\n- Evidence: Highlights rep productivity, manager coaching, and omnichannel consistency.\n- Action: Position Pitcher as a benchmark for coaching, content, and rep execution in one workflow.\n- URL: https://example.com/mock/novo-nordisk/field-force-effectiveness\n\n## Stakeholders\n\n- Helene Boe, Senior Director, Commercial Technology (Commercial Technology) — Connecting CRM programs to rep readiness and compliant content usage.\n- Mads Kristensen, Director, Omnichannel Capability (Omnichannel) — Comparing HCP engagement and field orchestration approaches before vendor criteria are finalized.\n- Jonas Lund, Head of Procurement, Digital Platforms (Procurement) — Checking if a formal sourcing path is likely or still forming.\n\n## Outreach angle\n\nHelp the team shape vendor criteria before a formal process starts around Salesforce Life Sciences Cloud and Commercial Excellence.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Novo Nordisk's salesforce life sciences cloud and commercial excellence review\n\nHi Helene,\n\nIt looks like Novo Nordisk may be reviewing salesforce life sciences cloud and commercial excellence after signals like \"Job post mentions Salesforce Life Sciences Cloud capability build\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Novo Nordisk may be revisiting salesforce life sciences cloud and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No confirmed procurement notice yet.\n- No explicit competitor or incumbent vendor evidence yet.\n- Most evidence is inferred rather than directly confirmed.\n",
+        "messagesMarkdown": "# Novo Nordisk outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Novo Nordisk's salesforce life sciences cloud and commercial excellence review\n\nHi Helene,\n\nIt looks like Novo Nordisk may be reviewing salesforce life sciences cloud and commercial excellence after signals like \"Job post mentions Salesforce Life Sciences Cloud capability build\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Novo Nordisk may be revisiting salesforce life sciences cloud and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted.\n",
+        "messagesText": "Novo Nordisk outreach pack\n\nEmail\nSubject: Quick benchmark on Novo Nordisk's salesforce life sciences cloud and commercial excellence review\n\nHi Helene,\n\nIt looks like Novo Nordisk may be reviewing salesforce life sciences cloud and commercial excellence after signals like \"Job post mentions Salesforce Life Sciences Cloud capability build\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Novo Nordisk may be revisiting salesforce life sciences cloud and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      }
+    },
+    {
+      "id": "cmoh54lly002djt6yxq5dteit",
+      "name": "Ferring",
+      "website": "https://www.ferring.com",
+      "industry": "PHARMA",
+      "industryLabel": "Pharma",
+      "country": "Switzerland",
+      "employeeCount": 7000,
+      "revenue": 2.3,
+      "owner": "Central Europe Pharma Pod",
+      "notes": "Global specialty pharma account with useful omnichannel and enablement adjacencies.",
+      "score": 45,
+      "confidence": 52,
+      "stage": "PRE_RFP",
+      "stageLabel": "Pre-RFP",
+      "lastDetectedAt": "2026-04-16T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "SALES_READINESS",
+          "label": "Sales Readiness"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "VENDOR_SIGNAL",
+          "label": "VENDOR SIGNAL",
+          "value": 15,
+          "reason": "Strongest vendor signal signal contributes to the account score."
+        },
+        {
+          "key": "STRATEGIC_INITIATIVE",
+          "label": "STRATEGIC INITIATIVE",
+          "value": 10,
+          "reason": "Strongest strategic initiative signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        },
+        {
+          "key": "ambiguity_penalty",
+          "label": "Ambiguity penalty",
+          "value": -10,
+          "reason": "All signals are inferred and none directly mention procurement."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lm9003kjt6ydcc8k3vk",
+          "title": "Competitor case study points to Showpad benchmark review",
+          "description": "Mock competitor monitoring suggests Showpad appeared in a recent benchmark conversation around launch content and sales readiness.",
+          "signalType": "VENDOR_SIGNAL",
+          "signalTypeLabel": "Vendor / competitor",
+          "sourceType": "VENDOR_CASE_STUDY",
+          "sourceName": "Mock Vendor / Competitor Intel",
+          "sourceUrl": "https://example.com/mock/ferring/showpad-benchmark",
+          "detectedAt": "2026-04-16T11:55:23.387Z",
+          "publishedAt": "2026-04-16T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Benchmark language references launch-readiness content and rep access controls.",
+          "category": "SALES_READINESS",
+          "categoryLabel": "Sales Readiness",
+          "recommendedAction": "Lead with differentiation on field execution depth rather than generic content management.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lma003mjt6y7cnsybiz",
+          "title": "Launch excellence program expands omnichannel readiness scope",
+          "description": "Mock strategic feed suggests launch excellence leaders are expanding into omnichannel execution and manager coaching.",
+          "signalType": "STRATEGIC_INITIATIVE",
+          "signalTypeLabel": "Strategic initiative",
+          "sourceType": "PRESS_RELEASE",
+          "sourceName": "Mock Strategic Initiative Watch",
+          "sourceUrl": "https://example.com/mock/ferring/launch-excellence-expansion",
+          "detectedAt": "2026-04-05T11:55:23.387Z",
+          "publishedAt": "2026-04-05T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 10,
+          "evidenceSnippet": "Program scope now spans launch readiness, engagement orchestration, and analytics.",
+          "category": "SALES_READINESS",
+          "categoryLabel": "Sales Readiness",
+          "recommendedAction": "Position Pitcher as a practical layer connecting launch execution, content, and coaching.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54lly002ejt6yja7459xx",
+          "accountId": "cmoh54lly002djt6yxq5dteit",
+          "name": "Daniela Frei",
+          "title": "Global Launch Excellence Lead",
+          "function": "Launch Excellence",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 88,
+          "suggestedMessageAngle": "Benchmarking launch readiness and field enablement before wider rollout decisions.",
+          "createdAt": "2026-04-27T11:55:23.878Z",
+          "updatedAt": "2026-04-27T11:55:23.878Z"
+        },
+        {
+          "id": "cmoh54lly002fjt6yi6gm13qg",
+          "accountId": "cmoh54lly002djt6yxq5dteit",
+          "name": "Marc Dubois",
+          "title": "Digital Engagement Director",
+          "function": "Customer Engagement",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 84,
+          "suggestedMessageAngle": "Improving HCP engagement and compliant content orchestration in one stack.",
+          "createdAt": "2026-04-27T11:55:23.878Z",
+          "updatedAt": "2026-04-27T11:55:23.878Z"
+        },
+        {
+          "id": "cmoh54lly002gjt6ygwc5y7e4",
+          "accountId": "cmoh54lly002djt6yxq5dteit",
+          "name": "Sophie Amstad",
+          "title": "Senior Sourcing Manager, Platforms",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 63,
+          "suggestedMessageAngle": "Checking if platform review criteria are still being shaped.",
+          "createdAt": "2026-04-27T11:55:23.878Z",
+          "updatedAt": "2026-04-27T11:55:23.878Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Help the team shape vendor criteria before a formal process starts around Sales Readiness.",
+        "email": "Subject: Quick benchmark on Ferring's sales readiness review\n\nHi Daniela,\n\nIt looks like Ferring may be reviewing sales readiness after signals like \"Competitor case study points to Showpad benchmark review\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Ferring may be revisiting sales readiness. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Reach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      },
+      "missingInformation": [
+        "No confirmed procurement notice yet.",
+        "Most evidence is inferred rather than directly confirmed."
+      ],
+      "exports": {
+        "markdown": "# Ferring\n\n- Industry: Pharma\n- Country: Switzerland\n- Employees: 7000\n- Revenue: $2.3B\n- Stage: Pre-RFP\n- Signal score: 45/100\n- Confidence: 52%\n\n## Why this account is ranked here\n\n- VENDOR SIGNAL: +15 — Strongest vendor signal signal contributes to the account score.\n- STRATEGIC INITIATIVE: +10 — Strongest strategic initiative signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n- Ambiguity penalty: -10 — All signals are inferred and none directly mention procurement.\n\n## Signals\n\n### Competitor case study points to Showpad benchmark review\n- Type: Vendor / competitor\n- Category: Sales Readiness\n- Confidence: 60%\n- Source: Mock Vendor / Competitor Intel\n- Published: 2026-04-16T11:55:23.387Z\n- Evidence: Benchmark language references launch-readiness content and rep access controls.\n- Action: Lead with differentiation on field execution depth rather than generic content management.\n- URL: https://example.com/mock/ferring/showpad-benchmark\n\n### Launch excellence program expands omnichannel readiness scope\n- Type: Strategic initiative\n- Category: Sales Readiness\n- Confidence: 60%\n- Source: Mock Strategic Initiative Watch\n- Published: 2026-04-05T11:55:23.387Z\n- Evidence: Program scope now spans launch readiness, engagement orchestration, and analytics.\n- Action: Position Pitcher as a practical layer connecting launch execution, content, and coaching.\n- URL: https://example.com/mock/ferring/launch-excellence-expansion\n\n## Stakeholders\n\n- Daniela Frei, Global Launch Excellence Lead (Launch Excellence) — Benchmarking launch readiness and field enablement before wider rollout decisions.\n- Marc Dubois, Digital Engagement Director (Customer Engagement) — Improving HCP engagement and compliant content orchestration in one stack.\n- Sophie Amstad, Senior Sourcing Manager, Platforms (Procurement) — Checking if platform review criteria are still being shaped.\n\n## Outreach angle\n\nHelp the team shape vendor criteria before a formal process starts around Sales Readiness.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Ferring's sales readiness review\n\nHi Daniela,\n\nIt looks like Ferring may be reviewing sales readiness after signals like \"Competitor case study points to Showpad benchmark review\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Ferring may be revisiting sales readiness. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No confirmed procurement notice yet.\n- Most evidence is inferred rather than directly confirmed.\n",
+        "messagesMarkdown": "# Ferring outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Ferring's sales readiness review\n\nHi Daniela,\n\nIt looks like Ferring may be reviewing sales readiness after signals like \"Competitor case study points to Showpad benchmark review\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Ferring may be revisiting sales readiness. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted.\n",
+        "messagesText": "Ferring outreach pack\n\nEmail\nSubject: Quick benchmark on Ferring's sales readiness review\n\nHi Daniela,\n\nIt looks like Ferring may be reviewing sales readiness after signals like \"Competitor case study points to Showpad benchmark review\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Ferring may be revisiting sales readiness. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      }
+    },
+    {
+      "id": "cmoh54llx0029jt6yo4ox7y2v",
+      "name": "Hikma",
+      "website": "https://www.hikma.com",
+      "industry": "PHARMA",
+      "industryLabel": "Pharma",
+      "country": "United Kingdom",
+      "employeeCount": 9100,
+      "revenue": 3.1,
+      "owner": "UKI Pharma Pod",
+      "notes": "Mid-to-large pharma account with visible capability-building and transformation signals.",
+      "score": 40,
+      "confidence": 52,
+      "stage": "EARLY_SIGNAL",
+      "stageLabel": "Early signal",
+      "lastDetectedAt": "2026-04-13T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "COMMERCIAL_EXCELLENCE",
+          "label": "Commercial Excellence"
+        },
+        {
+          "value": "CRM_ADOPTION",
+          "label": "CRM Adoption"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "ORGANIZATIONAL_CHANGE",
+          "label": "ORGANIZATIONAL CHANGE",
+          "value": 10,
+          "reason": "Strongest organizational change signal contributes to the account score."
+        },
+        {
+          "key": "STRATEGIC_INITIATIVE",
+          "label": "STRATEGIC INITIATIVE",
+          "value": 10,
+          "reason": "Strongest strategic initiative signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        },
+        {
+          "key": "ambiguity_penalty",
+          "label": "Ambiguity penalty",
+          "value": -10,
+          "reason": "All signals are inferred and none directly mention procurement."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lm9003ijt6yi7v18u35",
+          "title": "New Head of Commercial Excellence appointed",
+          "description": "Mock organizational signal suggests a new leader will centralize commercial capability and field execution practices.",
+          "signalType": "ORGANIZATIONAL_CHANGE",
+          "signalTypeLabel": "Organizational change",
+          "sourceType": "SEARCH_RESULT",
+          "sourceName": "Mock Organizational Watch",
+          "sourceUrl": "https://example.com/mock/hikma/new-commercial-excellence-lead",
+          "detectedAt": "2026-04-13T11:55:23.387Z",
+          "publishedAt": "2026-04-13T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 10,
+          "evidenceSnippet": "Leadership change references execution consistency and field productivity.",
+          "category": "COMMERCIAL_EXCELLENCE",
+          "categoryLabel": "Commercial Excellence",
+          "recommendedAction": "Map ownership and offer a benchmark conversation before new tooling assumptions settle.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lm9003gjt6ywbx6n41g",
+          "title": "CRM workflow redesign mentioned in regional enablement update",
+          "description": "Mock search signal indicates Hikma may be revisiting CRM workflow adoption for field teams.",
+          "signalType": "STRATEGIC_INITIATIVE",
+          "signalTypeLabel": "Strategic initiative",
+          "sourceType": "SEARCH_RESULT",
+          "sourceName": "Mock Technology Change Watch",
+          "sourceUrl": "https://example.com/mock/hikma/crm-redesign",
+          "detectedAt": "2026-03-27T11:55:23.387Z",
+          "publishedAt": "2026-03-27T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 10,
+          "evidenceSnippet": "Language references CRM workflow simplification and manager visibility.",
+          "category": "CRM_ADOPTION",
+          "categoryLabel": "CRM Adoption",
+          "recommendedAction": "Start with a benchmark-led conversation rather than assuming a formal process.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54llx002ajt6y608bgulw",
+          "accountId": "cmoh54llx0029jt6yo4ox7y2v",
+          "name": "Rachel Moore",
+          "title": "Head of Commercial Excellence",
+          "function": "Commercial Excellence",
+          "buyingRole": "PROGRAM_OWNER",
+          "relevanceScore": 92,
+          "suggestedMessageAngle": "Low-pressure benchmark conversation around field execution and CRM workflow improvements.",
+          "createdAt": "2026-04-27T11:55:23.877Z",
+          "updatedAt": "2026-04-27T11:55:23.877Z"
+        },
+        {
+          "id": "cmoh54llx002bjt6yj9u35d4p",
+          "accountId": "cmoh54llx0029jt6yo4ox7y2v",
+          "name": "Omar Saleh",
+          "title": "CRM and Analytics Director",
+          "function": "Commercial Technology",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 88,
+          "suggestedMessageAngle": "Exploring whether CRM adoption and content delivery pain points are being revisited.",
+          "createdAt": "2026-04-27T11:55:23.877Z",
+          "updatedAt": "2026-04-27T11:55:23.877Z"
+        },
+        {
+          "id": "cmoh54llx002cjt6y8prk4ykc",
+          "accountId": "cmoh54llx0029jt6yo4ox7y2v",
+          "name": "Emily Hart",
+          "title": "Category Manager, Digital & Data",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 62,
+          "suggestedMessageAngle": "Confirming if any supplier discovery has started under the radar.",
+          "createdAt": "2026-04-27T11:55:23.877Z",
+          "updatedAt": "2026-04-27T11:55:23.877Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Offer a low-pressure benchmark conversation around Commercial Excellence and CRM Adoption.",
+        "email": "Subject: Quick benchmark on Hikma's commercial excellence and crm adoption review\n\nHi Rachel,\n\nIt looks like Hikma may be reviewing commercial excellence and crm adoption after signals like \"New Head of Commercial Excellence appointed\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Hikma may be revisiting commercial excellence and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Reach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      },
+      "missingInformation": [
+        "No confirmed procurement notice yet.",
+        "No explicit competitor or incumbent vendor evidence yet.",
+        "Most evidence is inferred rather than directly confirmed."
+      ],
+      "exports": {
+        "markdown": "# Hikma\n\n- Industry: Pharma\n- Country: United Kingdom\n- Employees: 9100\n- Revenue: $3.1B\n- Stage: Early signal\n- Signal score: 40/100\n- Confidence: 52%\n\n## Why this account is ranked here\n\n- ORGANIZATIONAL CHANGE: +10 — Strongest organizational change signal contributes to the account score.\n- STRATEGIC INITIATIVE: +10 — Strongest strategic initiative signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n- Ambiguity penalty: -10 — All signals are inferred and none directly mention procurement.\n\n## Signals\n\n### New Head of Commercial Excellence appointed\n- Type: Organizational change\n- Category: Commercial Excellence\n- Confidence: 60%\n- Source: Mock Organizational Watch\n- Published: 2026-04-13T11:55:23.387Z\n- Evidence: Leadership change references execution consistency and field productivity.\n- Action: Map ownership and offer a benchmark conversation before new tooling assumptions settle.\n- URL: https://example.com/mock/hikma/new-commercial-excellence-lead\n\n### CRM workflow redesign mentioned in regional enablement update\n- Type: Strategic initiative\n- Category: CRM Adoption\n- Confidence: 60%\n- Source: Mock Technology Change Watch\n- Published: 2026-03-27T11:55:23.387Z\n- Evidence: Language references CRM workflow simplification and manager visibility.\n- Action: Start with a benchmark-led conversation rather than assuming a formal process.\n- URL: https://example.com/mock/hikma/crm-redesign\n\n## Stakeholders\n\n- Rachel Moore, Head of Commercial Excellence (Commercial Excellence) — Low-pressure benchmark conversation around field execution and CRM workflow improvements.\n- Omar Saleh, CRM and Analytics Director (Commercial Technology) — Exploring whether CRM adoption and content delivery pain points are being revisited.\n- Emily Hart, Category Manager, Digital & Data (Procurement) — Confirming if any supplier discovery has started under the radar.\n\n## Outreach angle\n\nOffer a low-pressure benchmark conversation around Commercial Excellence and CRM Adoption.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Hikma's commercial excellence and crm adoption review\n\nHi Rachel,\n\nIt looks like Hikma may be reviewing commercial excellence and crm adoption after signals like \"New Head of Commercial Excellence appointed\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Hikma may be revisiting commercial excellence and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No confirmed procurement notice yet.\n- No explicit competitor or incumbent vendor evidence yet.\n- Most evidence is inferred rather than directly confirmed.\n",
+        "messagesMarkdown": "# Hikma outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Hikma's commercial excellence and crm adoption review\n\nHi Rachel,\n\nIt looks like Hikma may be reviewing commercial excellence and crm adoption after signals like \"New Head of Commercial Excellence appointed\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Hikma may be revisiting commercial excellence and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted.\n",
+        "messagesText": "Hikma outreach pack\n\nEmail\nSubject: Quick benchmark on Hikma's commercial excellence and crm adoption review\n\nHi Rachel,\n\nIt looks like Hikma may be reviewing commercial excellence and crm adoption after signals like \"New Head of Commercial Excellence appointed\". I may be wrong, but teams in pharma often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Hikma may be revisiting commercial excellence and crm adoption. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nReach out to the top stakeholder with a benchmark-led message and confirm whether evaluation criteria are already being drafted."
+      }
+    },
+    {
+      "id": "cmoh54lm1002tjt6yugswvd0z",
+      "name": "Johnson & Johnson",
+      "website": "https://www.jnj.com",
+      "industry": "MEDTECH",
+      "industryLabel": "Medtech",
+      "country": "United States",
+      "employeeCount": 131000,
+      "revenue": 85.2,
+      "owner": "Global Strategic Pod",
+      "notes": "Useful demo account for late-stage or post-decision scenarios.",
+      "score": 35,
+      "confidence": 52,
+      "stage": "POST_DECISION",
+      "stageLabel": "Post-decision / Too late",
+      "lastDetectedAt": "2026-04-06T11:55:23.387Z",
+      "topCategories": [
+        {
+          "value": "SALES_ENABLEMENT",
+          "label": "Sales Enablement"
+        },
+        {
+          "value": "COMMERCIAL_EXCELLENCE",
+          "label": "Commercial Excellence"
+        }
+      ],
+      "scoringExplanation": [
+        {
+          "key": "VENDOR_SIGNAL",
+          "label": "VENDOR SIGNAL",
+          "value": 15,
+          "reason": "Strongest vendor signal signal contributes to the account score."
+        },
+        {
+          "key": "signal_cluster_bonus",
+          "label": "Multiple signals in 90 days",
+          "value": 10,
+          "reason": "Several signals in a short window usually mean the initiative is becoming concrete."
+        },
+        {
+          "key": "recency_bonus",
+          "label": "Recent signal bonus",
+          "value": 10,
+          "reason": "Fresh signals are more actionable for a BDR."
+        },
+        {
+          "key": "industry_fit_bonus",
+          "label": "Target industry fit",
+          "value": 10,
+          "reason": "Pitcher-fit industry bonus for the ideal customer profile."
+        },
+        {
+          "key": "ambiguity_penalty",
+          "label": "Ambiguity penalty",
+          "value": -10,
+          "reason": "All signals are inferred and none directly mention procurement."
+        }
+      ],
+      "signals": [
+        {
+          "id": "cmoh54lme0040jt6y91194vw4",
+          "title": "Partner announcement suggests rollout decision already made for enablement layer",
+          "description": "Mock partner announcement indicates a regional rollout decision may already be in execution.",
+          "signalType": "VENDOR_SIGNAL",
+          "signalTypeLabel": "Vendor / competitor",
+          "sourceType": "PARTNER_NEWS",
+          "sourceName": "Mock Vendor / Competitor Intel",
+          "sourceUrl": "https://example.com/mock/johnson-and-johnson/enablement-rollout",
+          "detectedAt": "2026-04-06T11:55:23.387Z",
+          "publishedAt": "2026-04-06T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Announcement language suggests implementation is already underway.",
+          "category": "SALES_ENABLEMENT",
+          "categoryLabel": "Sales Enablement",
+          "recommendedAction": "Treat current cycle as late and hunt for adjacent regions or future renewal windows.",
+          "isInferred": true
+        },
+        {
+          "id": "cmoh54lmf0042jt6yhgnd9tk7",
+          "title": "Sales operations centralization follows regional rollout",
+          "description": "Mock organizational signal suggests central teams are now standardizing around an already selected platform direction.",
+          "signalType": "VENDOR_SIGNAL",
+          "signalTypeLabel": "Vendor / competitor",
+          "sourceType": "SEARCH_RESULT",
+          "sourceName": "Mock Organizational Watch",
+          "sourceUrl": "https://example.com/mock/johnson-and-johnson/sales-ops-centralization",
+          "detectedAt": "2026-03-23T11:55:23.387Z",
+          "publishedAt": "2026-03-23T11:55:23.387Z",
+          "confidence": 60,
+          "scoreImpact": 15,
+          "evidenceSnippet": "Signal references centralization after program decisions were made.",
+          "category": "COMMERCIAL_EXCELLENCE",
+          "categoryLabel": "Commercial Excellence",
+          "recommendedAction": "Map whitespace in adjacent business units rather than pushing the current cycle.",
+          "isInferred": true
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "cmoh54lm1002ujt6ymypb7cih",
+          "accountId": "cmoh54lm1002tjt6yugswvd0z",
+          "name": "Megan Dorsey",
+          "title": "VP Sales Operations",
+          "function": "Sales Operations",
+          "buyingRole": "ECONOMIC_BUYER",
+          "relevanceScore": 88,
+          "suggestedMessageAngle": "Exploring whitespace after a likely platform decision in one business unit.",
+          "createdAt": "2026-04-27T11:55:23.882Z",
+          "updatedAt": "2026-04-27T11:55:23.882Z"
+        },
+        {
+          "id": "cmoh54lm1002vjt6yemha338n",
+          "accountId": "cmoh54lm1002tjt6yugswvd0z",
+          "name": "Alex Romero",
+          "title": "Field Enablement Director",
+          "function": "Field Enablement",
+          "buyingRole": "CHAMPION",
+          "relevanceScore": 81,
+          "suggestedMessageAngle": "Finding adjacent regions or teams that still need enablement workflow improvements.",
+          "createdAt": "2026-04-27T11:55:23.882Z",
+          "updatedAt": "2026-04-27T11:55:23.882Z"
+        },
+        {
+          "id": "cmoh54lm1002wjt6ywzxacpiz",
+          "accountId": "cmoh54lm1002tjt6yugswvd0z",
+          "name": "Priya Nair",
+          "title": "Category Manager, Commercial Technology",
+          "function": "Procurement",
+          "buyingRole": "PROCUREMENT",
+          "relevanceScore": 65,
+          "suggestedMessageAngle": "Understanding timing for renewal windows or adjacent programs.",
+          "createdAt": "2026-04-27T11:55:23.882Z",
+          "updatedAt": "2026-04-27T11:55:23.882Z"
+        }
+      ],
+      "outreach": {
+        "angle": "Treat this as a late-cycle account and look for adjacent business-unit whitespace.",
+        "email": "Subject: Quick benchmark on Johnson & Johnson's sales enablement and commercial excellence review\n\nHi Megan,\n\nIt looks like Johnson & Johnson may be reviewing sales enablement and commercial excellence after signals like \"Partner announcement suggests rollout decision already made for enablement layer\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name",
+        "linkedin": "It looks like Johnson & Johnson may be revisiting sales enablement and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?",
+        "nextBestAction": "Look for regional or adjacent business-unit whitespace instead of pushing the current cycle."
+      },
+      "missingInformation": [
+        "No confirmed procurement notice yet.",
+        "Most evidence is inferred rather than directly confirmed."
+      ],
+      "exports": {
+        "markdown": "# Johnson & Johnson\n\n- Industry: Medtech\n- Country: United States\n- Employees: 131000\n- Revenue: $85.2B\n- Stage: Post-decision / Too late\n- Signal score: 35/100\n- Confidence: 52%\n\n## Why this account is ranked here\n\n- VENDOR SIGNAL: +15 — Strongest vendor signal signal contributes to the account score.\n- Multiple signals in 90 days: +10 — Several signals in a short window usually mean the initiative is becoming concrete.\n- Recent signal bonus: +10 — Fresh signals are more actionable for a BDR.\n- Target industry fit: +10 — Pitcher-fit industry bonus for the ideal customer profile.\n- Ambiguity penalty: -10 — All signals are inferred and none directly mention procurement.\n\n## Signals\n\n### Partner announcement suggests rollout decision already made for enablement layer\n- Type: Vendor / competitor\n- Category: Sales Enablement\n- Confidence: 60%\n- Source: Mock Vendor / Competitor Intel\n- Published: 2026-04-06T11:55:23.387Z\n- Evidence: Announcement language suggests implementation is already underway.\n- Action: Treat current cycle as late and hunt for adjacent regions or future renewal windows.\n- URL: https://example.com/mock/johnson-and-johnson/enablement-rollout\n\n### Sales operations centralization follows regional rollout\n- Type: Vendor / competitor\n- Category: Commercial Excellence\n- Confidence: 60%\n- Source: Mock Organizational Watch\n- Published: 2026-03-23T11:55:23.387Z\n- Evidence: Signal references centralization after program decisions were made.\n- Action: Map whitespace in adjacent business units rather than pushing the current cycle.\n- URL: https://example.com/mock/johnson-and-johnson/sales-ops-centralization\n\n## Stakeholders\n\n- Megan Dorsey, VP Sales Operations (Sales Operations) — Exploring whitespace after a likely platform decision in one business unit.\n- Alex Romero, Field Enablement Director (Field Enablement) — Finding adjacent regions or teams that still need enablement workflow improvements.\n- Priya Nair, Category Manager, Commercial Technology (Procurement) — Understanding timing for renewal windows or adjacent programs.\n\n## Outreach angle\n\nTreat this as a late-cycle account and look for adjacent business-unit whitespace.\n\n## Suggested email\n\n```text\nSubject: Quick benchmark on Johnson & Johnson's sales enablement and commercial excellence review\n\nHi Megan,\n\nIt looks like Johnson & Johnson may be reviewing sales enablement and commercial excellence after signals like \"Partner announcement suggests rollout decision already made for enablement layer\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## Suggested LinkedIn message\n\n```text\nIt looks like Johnson & Johnson may be revisiting sales enablement and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Missing information\n\n- No confirmed procurement notice yet.\n- Most evidence is inferred rather than directly confirmed.\n",
+        "messagesMarkdown": "# Johnson & Johnson outreach pack\n\n## Email\n\n```text\nSubject: Quick benchmark on Johnson & Johnson's sales enablement and commercial excellence review\n\nHi Megan,\n\nIt looks like Johnson & Johnson may be reviewing sales enablement and commercial excellence after signals like \"Partner announcement suggests rollout decision already made for enablement layer\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n```\n\n## LinkedIn\n\n```text\nIt looks like Johnson & Johnson may be revisiting sales enablement and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n```\n\n## Next best action\n\nLook for regional or adjacent business-unit whitespace instead of pushing the current cycle.\n",
+        "messagesText": "Johnson & Johnson outreach pack\n\nEmail\nSubject: Quick benchmark on Johnson & Johnson's sales enablement and commercial excellence review\n\nHi Megan,\n\nIt looks like Johnson & Johnson may be reviewing sales enablement and commercial excellence after signals like \"Partner announcement suggests rollout decision already made for enablement layer\". I may be wrong, but teams in medtech often use this window to compare field execution, compliant content usage, and CRM adoption workflows before vendor selection hardens.\n\nPitcher helps field teams connect HCP or customer engagement, enablement content, coaching, and CRM workflows in one operating layer. If useful, I can share a short benchmark of how similar teams evaluate this space before formal procurement starts.\n\nWorth comparing notes for 15 minutes?\n\nBest,\nYour name\n\nLinkedIn\nIt looks like Johnson & Johnson may be revisiting sales enablement and commercial excellence. I may be wrong, but teams in similar situations often benchmark field execution and CRM-adoption workflows before formal vendor selection. Worth comparing notes?\n\nNext best action\nLook for regional or adjacent business-unit whitespace instead of pushing the current cycle."
+      }
+    }
+  ],
+  "signals": [
+    {
+      "id": "cmoh54lm8003cjt6ykn0c2uui",
+      "accountId": "cmoh54llw0025jt6y9e07sj43",
+      "accountName": "Novartis",
+      "title": "Procurement notice for HCP engagement and digital content platform",
+      "description": "A mock procurement notice references vendor evaluation for HCP engagement, digital content delivery, and analytics.",
+      "signalType": "DIRECT_PROCUREMENT",
+      "signalTypeLabel": "Direct procurement",
+      "category": "HCP_ENGAGEMENT",
+      "categoryLabel": "HCP Engagement",
+      "confidence": 90,
+      "sourceName": "Mock Public Tender Monitor",
+      "sourceType": "TENDER_PORTAL",
+      "sourceUrl": "https://example.com/mock/novartis/hcp-engagement-tender",
+      "publishedAt": "2026-04-21T11:55:23.387Z",
+      "detectedAt": "2026-04-21T11:55:23.387Z",
+      "evidenceSnippet": "Evaluation covers HCP engagement workflows, compliant content tracking, and usage analytics.",
+      "recommendedAction": "Move quickly to confirm whether the shortlist is still open and which business units are covered."
+    },
+    {
+      "id": "cmoh54lmb003ojt6y2chfvyo5",
+      "accountId": "cmoh54llz002hjt6yaaz9470v",
+      "accountName": "Fresenius Kabi",
+      "title": "RFI for sample management and field consent workflows",
+      "description": "A mock RFI references consent capture, sample visibility, and offline field workflow requirements.",
+      "signalType": "DIRECT_PROCUREMENT",
+      "signalTypeLabel": "Direct procurement",
+      "category": "SAMPLE_CONSENT",
+      "categoryLabel": "Sample / Consent Workflows",
+      "confidence": 90,
+      "sourceName": "Mock Public Tender Monitor",
+      "sourceType": "TENDER_PORTAL",
+      "sourceUrl": "https://example.com/mock/fresenius-kabi/sample-consent-rfi",
+      "publishedAt": "2026-04-19T11:55:23.387Z",
+      "detectedAt": "2026-04-19T11:55:23.387Z",
+      "evidenceSnippet": "Requirements call out offline operation, sample workflows, and manager oversight.",
+      "recommendedAction": "Bring a workflow-led POV that covers consent, content, and field productivity together."
+    },
+    {
+      "id": "cmoh54lm70038jt6y3nsnfipu",
+      "accountId": "cmoh54llw0021jt6yyw3845f1",
+      "accountName": "Novo Nordisk",
+      "title": "Job post mentions Salesforce Life Sciences Cloud capability build",
+      "description": "Mock ATS export references a team building Salesforce Life Sciences Cloud capabilities for global field teams.",
+      "signalType": "HIRING",
+      "signalTypeLabel": "Hiring",
+      "category": "SALESFORCE_LIFE_SCIENCES",
+      "categoryLabel": "Salesforce Life Sciences Cloud",
+      "confidence": 72,
+      "sourceName": "Mock Hiring Feed",
+      "sourceType": "JOB_POSTING",
+      "sourceUrl": "https://example.com/mock/novo-nordisk/life-sciences-cloud-capability",
+      "publishedAt": "2026-04-18T11:55:23.387Z",
+      "detectedAt": "2026-04-18T11:55:23.387Z",
+      "evidenceSnippet": "Role scope includes CRM workflow adoption, field coaching, and compliant engagement.",
+      "recommendedAction": "Approach as a benchmark on field adoption and HCP engagement on top of CRM change."
+    },
+    {
+      "id": "cmoh54lm9003kjt6ydcc8k3vk",
+      "accountId": "cmoh54lly002djt6yxq5dteit",
+      "accountName": "Ferring",
+      "title": "Competitor case study points to Showpad benchmark review",
+      "description": "Mock competitor monitoring suggests Showpad appeared in a recent benchmark conversation around launch content and sales readiness.",
+      "signalType": "VENDOR_SIGNAL",
+      "signalTypeLabel": "Vendor / competitor",
+      "category": "SALES_READINESS",
+      "categoryLabel": "Sales Readiness",
+      "confidence": 60,
+      "sourceName": "Mock Vendor / Competitor Intel",
+      "sourceType": "VENDOR_CASE_STUDY",
+      "sourceUrl": "https://example.com/mock/ferring/showpad-benchmark",
+      "publishedAt": "2026-04-16T11:55:23.387Z",
+      "detectedAt": "2026-04-16T11:55:23.387Z",
+      "evidenceSnippet": "Benchmark language references launch-readiness content and rep access controls.",
+      "recommendedAction": "Lead with differentiation on field execution depth rather than generic content management."
+    },
+    {
+      "id": "cmoh54lm4002yjt6ytz9oglkz",
+      "accountId": "cmoh54llt001tjt6y9k431jsf",
+      "accountName": "Philips",
+      "title": "Procurement notice for digital field engagement platform review",
+      "description": "A mock public-sector purchasing signal references vendor selection support for field engagement, content control, and mobile presentation workflows.",
+      "signalType": "DIRECT_PROCUREMENT",
+      "signalTypeLabel": "Direct procurement",
+      "category": "FIELD_ENABLEMENT",
+      "categoryLabel": "Field Enablement",
+      "confidence": 90,
+      "sourceName": "Mock Public Tender Monitor",
+      "sourceType": "TENDER_PORTAL",
+      "sourceUrl": "https://example.com/mock/philips/procurement-field-engagement",
+      "publishedAt": "2026-04-15T11:55:23.387Z",
+      "detectedAt": "2026-04-15T11:55:23.387Z",
+      "evidenceSnippet": "Vendor review mentions mobile field engagement, content governance, and CRM workflow integration.",
+      "recommendedAction": "Confirm whether the review covers the same field teams that use HCP or clinical-commercial engagement tools."
+    },
+    {
+      "id": "cmoh54lmc003sjt6yx12kz2ga",
+      "accountId": "cmoh54lm0002ljt6ysmertoxm",
+      "accountName": "Roche",
+      "title": "Hiring: AI Commercial Capability Director",
+      "description": "Mock job-post signal points to AI coaching, rep readiness, and field-manager capability priorities.",
+      "signalType": "HIRING",
+      "signalTypeLabel": "Hiring",
+      "category": "AI_COACHING",
+      "categoryLabel": "AI Coaching / Roleplay",
+      "confidence": 72,
+      "sourceName": "Mock Hiring Feed",
+      "sourceType": "JOB_POSTING",
+      "sourceUrl": "https://example.com/mock/roche/ai-commercial-capability",
+      "publishedAt": "2026-04-14T11:55:23.387Z",
+      "detectedAt": "2026-04-14T11:55:23.387Z",
+      "evidenceSnippet": "Role covers AI coaching, capability development, and field adoption metrics.",
+      "recommendedAction": "Open with AI roleplay and coaching use cases that plug into existing field workflows."
+    },
+    {
+      "id": "cmoh54lm9003ijt6yi7v18u35",
+      "accountId": "cmoh54llx0029jt6yo4ox7y2v",
+      "accountName": "Hikma",
+      "title": "New Head of Commercial Excellence appointed",
+      "description": "Mock organizational signal suggests a new leader will centralize commercial capability and field execution practices.",
+      "signalType": "ORGANIZATIONAL_CHANGE",
+      "signalTypeLabel": "Organizational change",
+      "category": "COMMERCIAL_EXCELLENCE",
+      "categoryLabel": "Commercial Excellence",
+      "confidence": 60,
+      "sourceName": "Mock Organizational Watch",
+      "sourceType": "SEARCH_RESULT",
+      "sourceUrl": "https://example.com/mock/hikma/new-commercial-excellence-lead",
+      "publishedAt": "2026-04-13T11:55:23.387Z",
+      "detectedAt": "2026-04-13T11:55:23.387Z",
+      "evidenceSnippet": "Leadership change references execution consistency and field productivity.",
+      "recommendedAction": "Map ownership and offer a benchmark conversation before new tooling assumptions settle."
+    },
+    {
+      "id": "cmoh54lm8003ejt6ydzb6o9en",
+      "accountId": "cmoh54llw0025jt6y9e07sj43",
+      "accountName": "Novartis",
+      "title": "Competitor reference mentions Seismic pilot in medical affairs adjacent team",
+      "description": "Mock competitor-intel feed suggests Seismic was discussed in a neighboring capability workstream.",
+      "signalType": "VENDOR_SIGNAL",
+      "signalTypeLabel": "Vendor / competitor",
+      "category": "CONTENT_GOVERNANCE",
+      "categoryLabel": "Content Governance / DAM",
+      "confidence": 60,
+      "sourceName": "Mock Vendor / Competitor Intel",
+      "sourceType": "VENDOR_CASE_STUDY",
+      "sourceUrl": "https://example.com/mock/novartis/seismic-reference",
+      "publishedAt": "2026-04-11T11:55:23.387Z",
+      "detectedAt": "2026-04-11T11:55:23.387Z",
+      "evidenceSnippet": "Reference points to pilot learnings around content governance and rep access.",
+      "recommendedAction": "Use a competitive-displacement angle and ask whether the same decision criteria apply to field teams."
+    },
+    {
+      "id": "cmoh54lmd003wjt6ykzksh4mz",
+      "accountId": "cmoh54lm0002pjt6yi1gpvkph",
+      "accountName": "Bayer",
+      "title": "Veeva to Salesforce transition program referenced in regional roadmap",
+      "description": "Mock technology change feed suggests transition planning around Veeva workflows and Salesforce Life Sciences Cloud.",
+      "signalType": "TECHNOLOGY_CHANGE",
+      "signalTypeLabel": "Technology change",
+      "category": "VEEVA_IQVIA_TRANSITION",
+      "categoryLabel": "Veeva / IQVIA Transition",
+      "confidence": 78,
+      "sourceName": "Mock Technology Change Watch",
+      "sourceType": "SEARCH_RESULT",
+      "sourceUrl": "https://example.com/mock/bayer/veeva-salesforce-roadmap",
+      "publishedAt": "2026-04-10T11:55:23.387Z",
+      "detectedAt": "2026-04-10T11:55:23.387Z",
+      "evidenceSnippet": "Roadmap language references phased CRM change and field execution implications.",
+      "recommendedAction": "Position Pitcher as a stabilizing layer for adoption, content, and engagement workflows during transition."
+    },
+    {
+      "id": "cmoh54lm50032jt6yfcefagp0",
+      "accountId": "cmoh54llv001xjt6y4icfgqes",
+      "accountName": "Merck Healthcare",
+      "title": "Hiring: Global Commercial Excellence Lead",
+      "description": "Mock job-post export highlights commercial excellence ownership across omnichannel execution, field force effectiveness, and launch readiness.",
+      "signalType": "HIRING",
+      "signalTypeLabel": "Hiring",
+      "category": "COMMERCIAL_EXCELLENCE",
+      "categoryLabel": "Commercial Excellence",
+      "confidence": 72,
+      "sourceName": "Mock Hiring Feed",
+      "sourceType": "JOB_POSTING",
+      "sourceUrl": "https://example.com/mock/merck-healthcare/global-commercial-excellence-lead",
+      "publishedAt": "2026-04-09T11:55:23.387Z",
+      "detectedAt": "2026-04-09T11:55:23.387Z",
+      "evidenceSnippet": "Role calls for field force effectiveness, capability-building, and cross-market execution standards.",
+      "recommendedAction": "Reach out to learn whether the role inherits a vendor review already in motion."
+    },
+    {
+      "id": "cmoh54lmc003qjt6yo0cvpnwi",
+      "accountId": "cmoh54llz002hjt6yaaz9470v",
+      "accountName": "Fresenius Kabi",
+      "title": "Mobile field sales app review linked to CRM modernization",
+      "description": "Mock technology watch indicates a broader mobile field workflow review connected to CRM modernization.",
+      "signalType": "PUBLIC_TENDER",
+      "signalTypeLabel": "Public tender",
+      "category": "MOBILE_FIELD_APP",
+      "categoryLabel": "Mobile Field Sales App",
+      "confidence": 90,
+      "sourceName": "Mock Technology Change Watch",
+      "sourceType": "COMPANY_SITE",
+      "sourceUrl": "https://example.com/mock/fresenius-kabi/mobile-field-review",
+      "publishedAt": "2026-04-08T11:55:23.387Z",
+      "detectedAt": "2026-04-08T11:55:23.387Z",
+      "evidenceSnippet": "Program language covers offline use, CRM connectivity, and compliant content access.",
+      "recommendedAction": "Lead with offline/mobile field execution and adoption outcomes."
+    },
+    {
+      "id": "cmoh54lme0040jt6y91194vw4",
+      "accountId": "cmoh54lm1002tjt6yugswvd0z",
+      "accountName": "Johnson & Johnson",
+      "title": "Partner announcement suggests rollout decision already made for enablement layer",
+      "description": "Mock partner announcement indicates a regional rollout decision may already be in execution.",
+      "signalType": "VENDOR_SIGNAL",
+      "signalTypeLabel": "Vendor / competitor",
+      "category": "SALES_ENABLEMENT",
+      "categoryLabel": "Sales Enablement",
+      "confidence": 60,
+      "sourceName": "Mock Vendor / Competitor Intel",
+      "sourceType": "PARTNER_NEWS",
+      "sourceUrl": "https://example.com/mock/johnson-and-johnson/enablement-rollout",
+      "publishedAt": "2026-04-06T11:55:23.387Z",
+      "detectedAt": "2026-04-06T11:55:23.387Z",
+      "evidenceSnippet": "Announcement language suggests implementation is already underway.",
+      "recommendedAction": "Treat current cycle as late and hunt for adjacent regions or future renewal windows."
+    },
+    {
+      "id": "cmoh54lma003mjt6y7cnsybiz",
+      "accountId": "cmoh54lly002djt6yxq5dteit",
+      "accountName": "Ferring",
+      "title": "Launch excellence program expands omnichannel readiness scope",
+      "description": "Mock strategic feed suggests launch excellence leaders are expanding into omnichannel execution and manager coaching.",
+      "signalType": "STRATEGIC_INITIATIVE",
+      "signalTypeLabel": "Strategic initiative",
+      "category": "SALES_READINESS",
+      "categoryLabel": "Sales Readiness",
+      "confidence": 60,
+      "sourceName": "Mock Strategic Initiative Watch",
+      "sourceType": "PRESS_RELEASE",
+      "sourceUrl": "https://example.com/mock/ferring/launch-excellence-expansion",
+      "publishedAt": "2026-04-05T11:55:23.387Z",
+      "detectedAt": "2026-04-05T11:55:23.387Z",
+      "evidenceSnippet": "Program scope now spans launch readiness, engagement orchestration, and analytics.",
+      "recommendedAction": "Position Pitcher as a practical layer connecting launch execution, content, and coaching."
+    },
+    {
+      "id": "cmoh54lm60034jt6yeedmjae4",
+      "accountId": "cmoh54llv001xjt6y4icfgqes",
+      "accountName": "Merck Healthcare",
+      "title": "Program note mentions Veeva to Salesforce transition planning",
+      "description": "Mock signal from a technology watch feed suggests planning around Veeva, Salesforce, and content workflow redesign.",
+      "signalType": "TECHNOLOGY_CHANGE",
+      "signalTypeLabel": "Technology change",
+      "category": "VEEVA_IQVIA_TRANSITION",
+      "categoryLabel": "Veeva / IQVIA Transition",
+      "confidence": 78,
+      "sourceName": "Mock Technology Change Watch",
+      "sourceType": "SEARCH_RESULT",
+      "sourceUrl": "https://example.com/mock/merck-healthcare/veeva-salesforce-transition",
+      "publishedAt": "2026-04-04T11:55:23.387Z",
+      "detectedAt": "2026-04-04T11:55:23.387Z",
+      "evidenceSnippet": "Mentions phased CRM design decisions and affiliate workflow harmonization.",
+      "recommendedAction": "Lead with how Pitcher sits across CRM adoption, content, and field execution without forcing rip-and-replace assumptions."
+    },
+    {
+      "id": "cmoh54lmd003ujt6yixm2w14p",
+      "accountId": "cmoh54lm0002ljt6ysmertoxm",
+      "accountName": "Roche",
+      "title": "Partner note references Mindtickle evaluation for coaching",
+      "description": "Mock partner monitoring suggests Mindtickle surfaced in a capability-platform review.",
+      "signalType": "VENDOR_SIGNAL",
+      "signalTypeLabel": "Vendor / competitor",
+      "category": "AI_COACHING",
+      "categoryLabel": "AI Coaching / Roleplay",
+      "confidence": 60,
+      "sourceName": "Mock Vendor / Competitor Intel",
+      "sourceType": "PARTNER_NEWS",
+      "sourceUrl": "https://example.com/mock/roche/mindtickle-evaluation",
+      "publishedAt": "2026-04-03T11:55:23.387Z",
+      "detectedAt": "2026-04-03T11:55:23.387Z",
+      "evidenceSnippet": "Signal ties AI coaching evaluation to broader field execution measures.",
+      "recommendedAction": "Use a competitive benchmark angle and tie coaching to broader field execution and HCP engagement."
+    },
+    {
+      "id": "cmoh54lme003yjt6yaprqkmp7",
+      "accountId": "cmoh54lm0002pjt6yi1gpvkph",
+      "accountName": "Bayer",
+      "title": "Omnichannel engagement transformation highlighted in internal keynote export",
+      "description": "Mock uploaded-export signal points to omnichannel redesign for commercial teams.",
+      "signalType": "PUBLIC_TENDER",
+      "signalTypeLabel": "Public tender",
+      "category": "OMNICHANNEL",
+      "categoryLabel": "Omnichannel Engagement",
+      "confidence": 90,
+      "sourceName": "Mock Strategic Initiative Watch",
+      "sourceType": "UPLOADED_EXPORT",
+      "sourceUrl": "https://example.com/mock/bayer/omnichannel-keynote",
+      "publishedAt": "2026-04-01T11:55:23.387Z",
+      "detectedAt": "2026-04-01T11:55:23.387Z",
+      "evidenceSnippet": "Message ties customer engagement transformation to execution consistency and analytics.",
+      "recommendedAction": "Start with a benchmark on omnichannel orchestration and field adoption metrics."
+    },
+    {
+      "id": "cmoh54lm7003ajt6y7ugbyw0s",
+      "accountId": "cmoh54llw0021jt6yyw3845f1",
+      "accountName": "Novo Nordisk",
+      "title": "Field force effectiveness initiative referenced in leadership post",
+      "description": "Mock uploaded social export references a field force effectiveness initiative spanning commercial capability and HCP engagement.",
+      "signalType": "STRATEGIC_INITIATIVE",
+      "signalTypeLabel": "Strategic initiative",
+      "category": "COMMERCIAL_EXCELLENCE",
+      "categoryLabel": "Commercial Excellence",
+      "confidence": 60,
+      "sourceName": "Mock Strategic Initiative Watch",
+      "sourceType": "UPLOADED_EXPORT",
+      "sourceUrl": "https://example.com/mock/novo-nordisk/field-force-effectiveness",
+      "publishedAt": "2026-03-31T11:55:23.387Z",
+      "detectedAt": "2026-03-31T11:55:23.387Z",
+      "evidenceSnippet": "Highlights rep productivity, manager coaching, and omnichannel consistency.",
+      "recommendedAction": "Position Pitcher as a benchmark for coaching, content, and rep execution in one workflow."
+    },
+    {
+      "id": "cmoh54lm50030jt6yqlq5wsmc",
+      "accountId": "cmoh54llt001tjt6y9k431jsf",
+      "accountName": "Philips",
+      "title": "CRM and field content workflow consolidation initiative",
+      "description": "Mock monitoring suggests Philips is aligning CRM workflows, rep content delivery, and offline field execution requirements.",
+      "signalType": "STRATEGIC_INITIATIVE",
+      "signalTypeLabel": "Strategic initiative",
+      "category": "CRM_ADOPTION",
+      "categoryLabel": "CRM Adoption",
+      "confidence": 60,
+      "sourceName": "Mock Technology Change Watch",
+      "sourceType": "COMPANY_SITE",
+      "sourceUrl": "https://example.com/mock/philips/crm-field-workflows",
+      "publishedAt": "2026-03-30T11:55:23.387Z",
+      "detectedAt": "2026-03-30T11:55:23.387Z",
+      "evidenceSnippet": "References consolidation of CRM-facing field content and guided workflows.",
+      "recommendedAction": "Lead with workflow simplification and offline/mobile field execution."
+    },
+    {
+      "id": "cmoh54lm9003gjt6ywbx6n41g",
+      "accountId": "cmoh54llx0029jt6yo4ox7y2v",
+      "accountName": "Hikma",
+      "title": "CRM workflow redesign mentioned in regional enablement update",
+      "description": "Mock search signal indicates Hikma may be revisiting CRM workflow adoption for field teams.",
+      "signalType": "STRATEGIC_INITIATIVE",
+      "signalTypeLabel": "Strategic initiative",
+      "category": "CRM_ADOPTION",
+      "categoryLabel": "CRM Adoption",
+      "confidence": 60,
+      "sourceName": "Mock Technology Change Watch",
+      "sourceType": "SEARCH_RESULT",
+      "sourceUrl": "https://example.com/mock/hikma/crm-redesign",
+      "publishedAt": "2026-03-27T11:55:23.387Z",
+      "detectedAt": "2026-03-27T11:55:23.387Z",
+      "evidenceSnippet": "Language references CRM workflow simplification and manager visibility.",
+      "recommendedAction": "Start with a benchmark-led conversation rather than assuming a formal process."
+    },
+    {
+      "id": "cmoh54lm60036jt6ybvkubf6v",
+      "accountId": "cmoh54llv001xjt6y4icfgqes",
+      "accountName": "Merck Healthcare",
+      "title": "Press mention of omnichannel customer engagement transformation",
+      "description": "Mock press-monitoring feed highlights a broader omnichannel and HCP engagement modernization program.",
+      "signalType": "STRATEGIC_INITIATIVE",
+      "signalTypeLabel": "Strategic initiative",
+      "category": "OMNICHANNEL",
+      "categoryLabel": "Omnichannel Engagement",
+      "confidence": 60,
+      "sourceName": "Mock Strategic Initiative Watch",
+      "sourceType": "PRESS_RELEASE",
+      "sourceUrl": "https://example.com/mock/merck-healthcare/omnichannel-transformation",
+      "publishedAt": "2026-03-24T11:55:23.387Z",
+      "detectedAt": "2026-03-24T11:55:23.387Z",
+      "evidenceSnippet": "Language points to customer engagement redesign rather than isolated channel tactics.",
+      "recommendedAction": "Frame Pitcher as a benchmark for connected field engagement and compliant content usage."
+    },
+    {
+      "id": "cmoh54lmf0042jt6yhgnd9tk7",
+      "accountId": "cmoh54lm1002tjt6yugswvd0z",
+      "accountName": "Johnson & Johnson",
+      "title": "Sales operations centralization follows regional rollout",
+      "description": "Mock organizational signal suggests central teams are now standardizing around an already selected platform direction.",
+      "signalType": "VENDOR_SIGNAL",
+      "signalTypeLabel": "Vendor / competitor",
+      "category": "COMMERCIAL_EXCELLENCE",
+      "categoryLabel": "Commercial Excellence",
+      "confidence": 60,
+      "sourceName": "Mock Organizational Watch",
+      "sourceType": "SEARCH_RESULT",
+      "sourceUrl": "https://example.com/mock/johnson-and-johnson/sales-ops-centralization",
+      "publishedAt": "2026-03-23T11:55:23.387Z",
+      "detectedAt": "2026-03-23T11:55:23.387Z",
+      "evidenceSnippet": "Signal references centralization after program decisions were made.",
+      "recommendedAction": "Map whitespace in adjacent business units rather than pushing the current cycle."
+    }
+  ],
+  "settings": {
+    "scoringWeights": [
+      {
+        "id": "cmoh54llq0017jt6y6voh0cj8",
+        "key": "technology_change",
+        "label": "CRM / Veeva / Salesforce / IQVIA Change",
+        "value": 20,
+        "description": "Migration, replacement, or major platform shift.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq0016jt6y5w8bul8y",
+        "key": "vendor_signal",
+        "label": "Competitor / Vendor Mention",
+        "value": 15,
+        "description": "Competitor, partner, or rollout evidence.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq0013jt6y6l8k95cf",
+        "key": "direct_procurement",
+        "label": "Direct RFP / Tender Mention",
+        "value": 40,
+        "description": "Confirmed procurement, sourcing, or tender language.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq0014jt6yhmo6vhk0",
+        "key": "hiring_signal",
+        "label": "Hiring Signal",
+        "value": 15,
+        "description": "Hiring tied to CRM, enablement, or commercial transformation.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq0019jt6ywbzq40uz",
+        "key": "signal_cluster_bonus",
+        "label": "Multiple Signals in 90 Days",
+        "value": 10,
+        "description": "Several signals in a short period increase urgency.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq0015jt6yascq4ili",
+        "key": "organizational_change",
+        "label": "New Commercial / Digital Leader",
+        "value": 10,
+        "description": "A new leader often indicates a review window.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq001ajt6yhibzpoj6",
+        "key": "recency_bonus",
+        "label": "Signal Freshness Within 30 Days",
+        "value": 10,
+        "description": "Fresh signals are more actionable.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq0018jt6ye4zlwt2l",
+        "key": "strategic_initiative",
+        "label": "Strategic Initiative Mention",
+        "value": 10,
+        "description": "Transformation language without direct procurement.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq001bjt6yj70z8saj",
+        "key": "industry_fit_bonus",
+        "label": "Target Industry Fit",
+        "value": 10,
+        "description": "Pitcher-fit industry bonus.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      },
+      {
+        "id": "cmoh54llq001cjt6yaisf6k7v",
+        "key": "ambiguity_penalty",
+        "label": "Weak / Ambiguous Signal Penalty",
+        "value": -10,
+        "description": "Penalty for inferred-only, noisy evidence.",
+        "createdAt": "2026-04-27T11:55:23.870Z",
+        "updatedAt": "2026-04-27T11:55:23.870Z"
+      }
+    ],
+    "keywords": [
+      {
+        "id": "cmoh54llm000jjt6ybozvebcs",
+        "groupName": "AI",
+        "term": "ai coaching",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "AI_COACHING",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000ijt6y83i6s8hg",
+        "groupName": "AI",
+        "term": "ai roleplay",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "AI_COACHING",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000kjt6ypfniyd0q",
+        "groupName": "AI",
+        "term": "sales readiness",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "SALES_READINESS",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000pjt6y5o8lvzw5",
+        "groupName": "Competitors",
+        "term": "allego",
+        "signalType": "VENDOR_SIGNAL",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000mjt6yrhzogu5a",
+        "groupName": "Competitors",
+        "term": "highspot",
+        "signalType": "VENDOR_SIGNAL",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000qjt6yln6xa89b",
+        "groupName": "Competitors",
+        "term": "mediafly",
+        "signalType": "VENDOR_SIGNAL",
+        "category": "DIGITAL_SALES_ROOM",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000ojt6yuch8iq5h",
+        "groupName": "Competitors",
+        "term": "mindtickle",
+        "signalType": "VENDOR_SIGNAL",
+        "category": "AI_COACHING",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000ljt6y239e457s",
+        "groupName": "Competitors",
+        "term": "seismic",
+        "signalType": "VENDOR_SIGNAL",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000njt6y8918bfg6",
+        "groupName": "Competitors",
+        "term": "showpad",
+        "signalType": "VENDOR_SIGNAL",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0002jt6ye66y6vpz",
+        "groupName": "Direct Procurement",
+        "term": "rfi",
+        "signalType": "DIRECT_PROCUREMENT",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0000jt6yyfhbu1s4",
+        "groupName": "Direct Procurement",
+        "term": "rfp",
+        "signalType": "DIRECT_PROCUREMENT",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0001jt6y6k9fxe6v",
+        "groupName": "Direct Procurement",
+        "term": "rfq",
+        "signalType": "DIRECT_PROCUREMENT",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0003jt6y9vy7ng0z",
+        "groupName": "Direct Procurement",
+        "term": "tender",
+        "signalType": "DIRECT_PROCUREMENT",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0004jt6yqyp4axv2",
+        "groupName": "Direct Procurement",
+        "term": "vendor selection",
+        "signalType": "DIRECT_PROCUREMENT",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000bjt6yt51e3pkz",
+        "groupName": "Pharma",
+        "term": "clm",
+        "signalType": "TECHNOLOGY_CHANGE",
+        "category": "CLM_EDETAILING",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000cjt6yw0za5k34",
+        "groupName": "Pharma",
+        "term": "edetailing",
+        "signalType": "TECHNOLOGY_CHANGE",
+        "category": "CLM_EDETAILING",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000gjt6ytbi30ts4",
+        "groupName": "Pharma",
+        "term": "field force effectiveness",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "COMMERCIAL_EXCELLENCE",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000ajt6yk0omi99b",
+        "groupName": "Pharma",
+        "term": "hcp engagement",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "HCP_ENGAGEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000ejt6yri0cram8",
+        "groupName": "Pharma",
+        "term": "iqvia",
+        "signalType": "TECHNOLOGY_CHANGE",
+        "category": "VEEVA_IQVIA_TRANSITION",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000hjt6yfy22mtw3",
+        "groupName": "Pharma",
+        "term": "sales force effectiveness",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "COMMERCIAL_EXCELLENCE",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000fjt6ygdi3974c",
+        "groupName": "Pharma",
+        "term": "salesforce life sciences cloud",
+        "signalType": "TECHNOLOGY_CHANGE",
+        "category": "SALESFORCE_LIFE_SCIENCES",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm000djt6y5mui7t56",
+        "groupName": "Pharma",
+        "term": "veeva",
+        "signalType": "TECHNOLOGY_CHANGE",
+        "category": "VEEVA_IQVIA_TRANSITION",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0007jt6ya9yym6zw",
+        "groupName": "Sales Enablement",
+        "term": "commercial excellence",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "COMMERCIAL_EXCELLENCE",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0009jt6y0bn462wp",
+        "groupName": "Sales Enablement",
+        "term": "digital sales room",
+        "signalType": "TECHNOLOGY_CHANGE",
+        "category": "DIGITAL_SALES_ROOM",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0008jt6yri1nqtck",
+        "groupName": "Sales Enablement",
+        "term": "field enablement",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "FIELD_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0006jt6yhwldpwaa",
+        "groupName": "Sales Enablement",
+        "term": "revenue enablement",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "REVENUE_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      },
+      {
+        "id": "cmoh54llm0005jt6yhg7tek5x",
+        "groupName": "Sales Enablement",
+        "term": "sales enablement",
+        "signalType": "STRATEGIC_INITIATIVE",
+        "category": "SALES_ENABLEMENT",
+        "weight": 4,
+        "active": true,
+        "createdAt": "2026-04-27T11:55:23.867Z",
+        "updatedAt": "2026-04-27T11:55:23.867Z"
+      }
+    ],
+    "competitors": [
+      {
+        "id": "cmoh54llp000wjt6y01m4hb8j",
+        "name": "Allego",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000ujt6ypm17uh3w",
+        "name": "Bigtincan",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000sjt6ye5ytyeyd",
+        "name": "Highspot",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp0011jt6ymrnjl2a4",
+        "name": "IQVIA OCE",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp0010jt6yrujj2gk1",
+        "name": "Mediafly",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000vjt6y7740p5rm",
+        "name": "Mindtickle",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp0012jt6yg5ix9jj2",
+        "name": "Salesforce Life Sciences Cloud",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000yjt6yl8ngrarp",
+        "name": "Saleshood",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000rjt6yvfr57x9c",
+        "name": "Seismic",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000tjt6yc6b4as1k",
+        "name": "Showpad",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000zjt6yiz7dtz4i",
+        "name": "Spekit",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      },
+      {
+        "id": "cmoh54llp000xjt6ya9899n8x",
+        "name": "Veeva Vault",
+        "notes": null,
+        "createdAt": "2026-04-27T11:55:23.869Z",
+        "updatedAt": "2026-04-27T11:55:23.869Z"
+      }
+    ],
+    "targetSettings": [
+      {
+        "id": "cmoh54lls001sjt6ymqnucqpl",
+        "type": "TARGET_COUNTRY",
+        "value": "Denmark",
+        "label": "Denmark",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001pjt6yks9eud1l",
+        "type": "TARGET_COUNTRY",
+        "value": "Germany",
+        "label": "Germany",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001rjt6ydov2gzt2",
+        "type": "TARGET_COUNTRY",
+        "value": "Netherlands",
+        "label": "Netherlands",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001qjt6yjpakqk5r",
+        "type": "TARGET_COUNTRY",
+        "value": "Switzerland",
+        "label": "Switzerland",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001ojt6ym2hr7aqr",
+        "type": "TARGET_COUNTRY",
+        "value": "United Kingdom",
+        "label": "United Kingdom",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001njt6y66owflzn",
+        "type": "TARGET_INDUSTRY",
+        "value": "ENTERPRISE_FIELD_SALES",
+        "label": "Enterprise Field Sales",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001mjt6y8swie43t",
+        "type": "TARGET_INDUSTRY",
+        "value": "FINANCIAL_SERVICES",
+        "label": "Financial Services",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001ljt6y27ee84du",
+        "type": "TARGET_INDUSTRY",
+        "value": "MEDTECH",
+        "label": "Medtech",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      },
+      {
+        "id": "cmoh54lls001kjt6yewsn4qsz",
+        "type": "TARGET_INDUSTRY",
+        "value": "PHARMA",
+        "label": "Pharma",
+        "createdAt": "2026-04-27T11:55:23.872Z",
+        "updatedAt": "2026-04-27T11:55:23.872Z"
+      }
+    ],
+    "providerConfigs": [
+      {
+        "id": "cmoh54llr001djt6yqiu9gk3e",
+        "key": "mock-hiring-feed",
+        "name": "Mock Hiring Feed",
+        "status": "MOCK",
+        "description": "Simulated job-posting signals for the MVP.",
+        "notes": "Replace with approved LinkedIn or ATS exports later.",
+        "createdAt": "2026-04-27T11:55:23.871Z",
+        "updatedAt": "2026-04-27T11:55:23.871Z",
+        "statusLabel": "Mock"
+      },
+      {
+        "id": "cmoh54llr001gjt6y9gab12hv",
+        "key": "mock-organizational-watch",
+        "name": "Mock Organizational Watch",
+        "status": "MOCK",
+        "description": "Simulated leadership-change and org-design signals.",
+        "notes": "Future source: approved people-data providers and company news.",
+        "createdAt": "2026-04-27T11:55:23.871Z",
+        "updatedAt": "2026-04-27T11:55:23.871Z",
+        "statusLabel": "Mock"
+      },
+      {
+        "id": "cmoh54llr001ijt6y5rnc72ed",
+        "key": "mock-public-tender",
+        "name": "Mock Public Tender Monitor",
+        "status": "MOCK",
+        "description": "Simulated procurement notices and public tender signals.",
+        "notes": "Future source: TED, Find a Tender, NHS, UNGM, SAM.gov.",
+        "createdAt": "2026-04-27T11:55:23.871Z",
+        "updatedAt": "2026-04-27T11:55:23.871Z",
+        "statusLabel": "Mock"
+      },
+      {
+        "id": "cmoh54llr001fjt6y8idke4k2",
+        "key": "mock-strategy-watch",
+        "name": "Mock Strategic Initiative Watch",
+        "status": "MOCK",
+        "description": "Transformation and launch-excellence signals from public narratives.",
+        "notes": "Future source: company sites, PR, and Google Alerts exports.",
+        "createdAt": "2026-04-27T11:55:23.871Z",
+        "updatedAt": "2026-04-27T11:55:23.871Z",
+        "statusLabel": "Mock"
+      },
+      {
+        "id": "cmoh54llr001ejt6ym1id7z9i",
+        "key": "mock-tech-watch",
+        "name": "Mock Technology Change Watch",
+        "status": "MOCK",
+        "description": "Simulated CRM, Veeva, Salesforce, and platform-shift signals.",
+        "notes": "Future source: search, RSS, and partner APIs.",
+        "createdAt": "2026-04-27T11:55:23.871Z",
+        "updatedAt": "2026-04-27T11:55:23.871Z",
+        "statusLabel": "Mock"
+      },
+      {
+        "id": "cmoh54llr001hjt6yjvedfwr5",
+        "key": "mock-vendor-intel",
+        "name": "Mock Vendor / Competitor Intel",
+        "status": "MOCK",
+        "description": "Simulated competitor case-study and partner references.",
+        "notes": "Future source: competitor sites and partner PR.",
+        "createdAt": "2026-04-27T11:55:23.871Z",
+        "updatedAt": "2026-04-27T11:55:23.871Z",
+        "statusLabel": "Mock"
+      },
+      {
+        "id": "cmoh54llr001jjt6y20a0oh1d",
+        "key": "hubspot-target-list",
+        "name": "HubSpot Target List",
+        "status": "PLANNED",
+        "description": "Planned CRM sync for account ownership and target lists.",
+        "notes": "Local-first MVP keeps this as a placeholder.",
+        "createdAt": "2026-04-27T11:55:23.871Z",
+        "updatedAt": "2026-04-27T11:55:23.871Z",
+        "statusLabel": "Planned"
+      }
+    ]
+  },
+  "fullReportMarkdown": "# Pitcher Signal Radar report\n\nGenerated with 10 monitored accounts and 21 recent signals.\n\n## KPI snapshot\n\n- Active RFP accounts: 3\n- Pre-RFP accounts: 3\n- High-priority accounts: 5\n- Recent signals: 18\n\n## Priority accounts\n\n- Fresenius Kabi: Active RFP / Tender (100/100, 100%)\n- Bayer: Active RFP / Tender (90/100, 94%)\n- Novartis: Active RFP / Tender (85/100, 85%)\n- Philips: Active evaluation (80/100, 85%)\n- Merck Healthcare: Active evaluation (65/100, 62%)\n- Roche: Pre-RFP (50/100, 58%)\n- Novo Nordisk: Pre-RFP (45/100, 58%)\n- Ferring: Pre-RFP (45/100, 52%)\n- Hikma: Early signal (40/100, 52%)\n- Johnson & Johnson: Post-decision / Too late (35/100, 52%)\n\n## Recent feed\n\n- Novartis: Procurement notice for HCP engagement and digital content platform [Direct procurement] (6 days ago)\n- Fresenius Kabi: RFI for sample management and field consent workflows [Direct procurement] (8 days ago)\n- Novo Nordisk: Job post mentions Salesforce Life Sciences Cloud capability build [Hiring] (9 days ago)\n- Ferring: Competitor case study points to Showpad benchmark review [Vendor / competitor] (11 days ago)\n- Philips: Procurement notice for digital field engagement platform review [Direct procurement] (12 days ago)\n- Roche: Hiring: AI Commercial Capability Director [Hiring] (13 days ago)\n- Hikma: New Head of Commercial Excellence appointed [Organizational change] (14 days ago)\n- Novartis: Competitor reference mentions Seismic pilot in medical affairs adjacent team [Vendor / competitor] (16 days ago)\n- Bayer: Veeva to Salesforce transition program referenced in regional roadmap [Technology change] (17 days ago)\n- Merck Healthcare: Hiring: Global Commercial Excellence Lead [Hiring] (18 days ago)\n- Fresenius Kabi: Mobile field sales app review linked to CRM modernization [Public tender] (19 days ago)\n- Johnson & Johnson: Partner announcement suggests rollout decision already made for enablement layer [Vendor / competitor] (21 days ago)\n- Ferring: Launch excellence program expands omnichannel readiness scope [Strategic initiative] (22 days ago)\n- Merck Healthcare: Program note mentions Veeva to Salesforce transition planning [Technology change] (23 days ago)\n- Roche: Partner note references Mindtickle evaluation for coaching [Vendor / competitor] (24 days ago)\n"
+}

@@ -3,120 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tender Intelligence Engine</title>
+    <title>Pitcher Signal Radar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
-    <div class="app-shell">
+    <div class="shell">
       <aside class="sidebar">
-        <div class="brand-block">
-          <div class="eyebrow">Pitcher-fit procurement radar</div>
-          <h1>Tender Intelligence Engine</h1>
-          <p>Free-hosted on GitHub Pages. Data refreshes on a schedule with no backend server.</p>
+        <div class="brand">
+          <div class="eyebrow">Pitcher BDR Radar</div>
+          <h1>Pitcher Signal Radar</h1>
+          <p>Static public demo of the local-first BDR workflow for spotting early RFP, RFQ, tender, and vendor-evaluation signals.</p>
         </div>
 
-        <section class="panel">
-          <h2>Snapshot</h2>
-          <div class="field">
-            <label>Last refresh</label>
-            <div id="generatedAt" class="helper-text">Loading...</div>
+        <section class="card">
+          <h2>Deployment</h2>
+          <div class="meta-list">
+            <div><span>Hosting</span><strong>GitHub Pages</strong></div>
+            <div><span>Data mode</span><strong>Static export</strong></div>
+            <div><span>Source</span><strong>Local SQLite seed</strong></div>
+            <div><span>Updated</span><strong id="generatedAt">Loading...</strong></div>
           </div>
-          <div class="field">
-            <label>Review storage</label>
-            <div class="helper-text">Saved in this browser via local storage.</div>
-          </div>
-          <a class="primary-button" href="https://github.com/ismailpitcher/TenderIntelligenceEngine/actions" target="_blank" rel="noreferrer">View refresh workflow</a>
         </section>
 
-        <section class="panel">
-          <h2>Source Health</h2>
-          <div id="runHealth" class="helper-text">Loading...</div>
+        <section class="card">
+          <h2>Quick actions</h2>
+          <div class="button-stack">
+            <a class="button primary" href="https://github.com/ismailpitcher/TenderIntelligenceEngine" target="_blank" rel="noreferrer">Open repository</a>
+            <button id="downloadReportButton" class="button ghost" type="button">Download report</button>
+            <button id="downloadAccountsButton" class="button ghost" type="button">Download accounts CSV</button>
+          </div>
         </section>
 
-        <section class="panel">
-          <h2>Filters</h2>
-          <div class="field">
-            <label for="searchQuery">Search</label>
-            <input id="searchQuery" type="text" placeholder="sales enablement, CRM, field force..." />
-          </div>
-          <div class="field">
-            <label for="sourceFilter">Source</label>
-            <select id="sourceFilter"></select>
-          </div>
-          <div class="field">
-            <label for="countryFilter">Country</label>
-            <select id="countryFilter"></select>
-          </div>
-          <div class="field">
-            <label for="reviewFilter">Review status</label>
-            <select id="reviewFilter">
-              <option value="">All</option>
-              <option value="new">New</option>
-              <option value="qualified">Qualified</option>
-              <option value="watch">Watch</option>
-              <option value="rejected">Rejected</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="fitMin">Minimum fit score</label>
-            <input id="fitMin" type="range" min="0" max="100" step="5" value="0" />
-            <div class="range-readout"><span id="fitMinValue">0</span>+</div>
-          </div>
-          <button id="applyFiltersButton" class="primary-button">Apply filters</button>
-          <button id="exportCsvButton" class="ghost-button">Export current view</button>
+        <section class="card">
+          <h2>Notes</h2>
+          <p class="muted">
+            This public site is a static demo. The full authoring workflow, Prisma database, CSV upload, and manual account creation remain in the local `web/` app.
+          </p>
         </section>
       </aside>
 
-      <main class="main-stage">
+      <main class="main">
         <section class="hero">
           <div>
-            <div class="eyebrow">Zero-cost deployment</div>
-            <h2>Static procurement intelligence for Pitcher.</h2>
+            <div class="eyebrow">Public demo</div>
+            <h2>See the BDR signal workflow on the live Pages URL.</h2>
             <p>
-              This GitHub Pages build reads a scheduled snapshot of scored notices from official public sources,
-              then lets you triage them in the browser with no paid hosting.
+              This version is generated from the same seeded account intelligence used by the local MVP. It shows account scoring,
+              stage detection, outreach guidance, evidence, and settings in a zero-backend format.
             </p>
           </div>
-          <div class="hero-card">
-            <div class="hero-metric">
-              <span class="hero-label">Hosting</span>
-              <strong>GitHub Pages</strong>
-            </div>
-            <div class="hero-metric">
-              <span class="hero-label">Refresh</span>
-              <strong>GitHub Actions</strong>
-            </div>
-            <div class="hero-metric">
-              <span class="hero-label">State</span>
-              <strong>Browser local</strong>
-            </div>
-          </div>
+          <div class="hero-metrics" id="heroMetrics"></div>
         </section>
 
-        <section id="statsGrid" class="stats-grid"></section>
+        <section class="tabbar" id="tabbar">
+          <button class="tab active" data-view="dashboard" type="button">Dashboard</button>
+          <button class="tab" data-view="accounts" type="button">Accounts</button>
+          <button class="tab" data-view="signals" type="button">Signal Feed</button>
+          <button class="tab" data-view="settings" type="button">Settings</button>
+        </section>
 
-        <section class="workspace">
-          <div class="list-column">
-            <div class="section-heading">
-              <h3>Ranked notices</h3>
-              <span id="resultsMeta" class="mono-text"></span>
-            </div>
-            <div id="resultsList" class="results-list"></div>
-          </div>
-          <div class="detail-column">
-            <div class="section-heading">
-              <h3>Notice detail</h3>
-            </div>
-            <div id="detailPane" class="detail-pane empty-state">
-              Select a notice to inspect it and save your own review state locally.
-            </div>
-          </div>
+        <section id="viewRoot" class="view-root">
+          <div class="loading-card">Loading radar data...</div>
         </section>
       </main>
     </div>
+
     <script src="./app.js"></script>
   </body>
 </html>

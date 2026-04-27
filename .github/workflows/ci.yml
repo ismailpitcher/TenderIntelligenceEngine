@@ -18,3 +18,30 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests
         run: python -m pytest -q
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+      - name: Install dependencies
+        working-directory: web
+        run: |
+          cp .env.example .env
+          npm ci
+      - name: Prepare database
+        working-directory: web
+        run: |
+          npm run db:push
+          npm run db:seed
+      - name: Validate web app
+        working-directory: web
+        run: |
+          npm run typecheck
+          npm run lint
+          npm run test
+          npm run build
