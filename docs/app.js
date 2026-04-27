@@ -386,6 +386,50 @@ function renderAccounts() {
                     .join("")}
                 </div>
               </div>
+
+              <div class="detail-card">
+                <h4>Detected signals for this account</h4>
+                <div class="timeline">
+                  ${account.signals
+                    .map(
+                      (signal) => `
+                        <article class="timeline-item">
+                          <div class="badge-row">
+                            <span class="${badgeClass("signal", signal.signalType)}">${escapeHtml(signal.signalTypeLabel)}</span>
+                            <span class="${badgeClass("conf", signal.confidence >= 80 ? "high" : signal.confidence >= 60 ? "med" : "low")}">${signal.confidence}% confidence</span>
+                            <span class="token">${escapeHtml(signal.categoryLabel)}</span>
+                          </div>
+                          <h4>${escapeHtml(signal.title)}</h4>
+                          <div class="meta-inline">
+                            <span>${escapeHtml(formatRelative(signal.publishedAt || signal.detectedAt))}</span>
+                            <span>${escapeHtml(signal.sourceName)}</span>
+                          </div>
+                          <p>${escapeHtml(signal.evidenceSnippet)}</p>
+                          <p><strong>Recommended action:</strong> ${escapeHtml(signal.recommendedAction)}</p>
+                          <a class="pill-link" href="${escapeHtml(signal.sourceUrl)}" target="_blank" rel="noreferrer">Open evidence</a>
+                        </article>
+                      `,
+                    )
+                    .join("")}
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <h4>Why this account scored this way</h4>
+                <div class="settings-group">
+                  ${account.scoringExplanation
+                    .map(
+                      (line) => `
+                        <div class="explanation-card">
+                          <h4>${escapeHtml(line.label)}</h4>
+                          <div class="subtle">${line.value >= 0 ? "+" : ""}${escapeHtml(line.value)}</div>
+                          <p>${escapeHtml(line.reason)}</p>
+                        </div>
+                      `,
+                    )
+                    .join("")}
+                </div>
+              </div>
             `
             : `<div class="empty-state">No accounts match the current filters.</div>`
         }
@@ -478,7 +522,10 @@ function renderSignals() {
                   <h3>${escapeHtml(selected.title)}</h3>
                   <p>${escapeHtml(selected.accountName)} • ${escapeHtml(formatDate(selected.publishedAt || selected.detectedAt))}</p>
                 </div>
-                <a class="pill-link" href="${escapeHtml(selected.sourceUrl)}" target="_blank" rel="noreferrer">Open evidence</a>
+                <div class="badge-row">
+                  <a class="pill-link" href="#" data-account-id="${escapeHtml(selected.accountId)}">Open account</a>
+                  <a class="pill-link" href="${escapeHtml(selected.sourceUrl)}" target="_blank" rel="noreferrer">Open evidence</a>
+                </div>
               </div>
               <div class="detail-card">
                 <div class="badge-row">
