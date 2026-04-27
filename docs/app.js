@@ -6,6 +6,7 @@
   const tabbar = document.getElementById("tabbar");
   const heroMetrics = document.getElementById("heroMetrics");
   const generatedAt = document.getElementById("generatedAt");
+  const sourceSummary = document.getElementById("sourceSummary");
   const downloadReportButton = document.getElementById("downloadReportButton");
   const downloadAccountsButton = document.getElementById("downloadAccountsButton");
   const downloadNoticesButton = document.getElementById("downloadNoticesButton");
@@ -993,6 +994,7 @@
     defaultSelections();
     heroMetrics.innerHTML = heroMetricsHtml();
     generatedAt.textContent = formatDateTime(state.snapshot.generated_at);
+    sourceSummary.textContent = (state.snapshot.meta?.sources ?? []).map(sourceLabel).join(", ") || "Unavailable";
 
     tabbar.querySelectorAll(".tab").forEach((tab) => {
       tab.classList.toggle("active", tab.dataset.view === state.view);
