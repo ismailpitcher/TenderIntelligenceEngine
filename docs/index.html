@@ -15,15 +15,15 @@
         <div class="brand">
           <div class="eyebrow">Pitcher BDR Radar</div>
           <h1>Pitcher Signal Radar</h1>
-          <p>Live public tender intelligence from official procurement sources, plus a separate demo account workflow for the broader BDR product concept.</p>
+          <p>Official public procurement intelligence for Pitcher. Every screen on this site is powered only by real notices from approved public sources.</p>
         </div>
 
         <section class="card">
           <h2>Deployment</h2>
           <div class="meta-list">
             <div><span>Hosting</span><strong>GitHub Pages</strong></div>
-            <div><span>Data mode</span><strong>Static export</strong></div>
-            <div><span>Real source</span><strong>TED, BOAMP, UK portals</strong></div>
+            <div><span>Mode</span><strong>Real public data only</strong></div>
+            <div><span>Sources</span><strong>TED, BOAMP, UK portals</strong></div>
             <div><span>Updated</span><strong id="generatedAt">Loading...</strong></div>
           </div>
         </section>
@@ -32,15 +32,16 @@
           <h2>Quick actions</h2>
           <div class="button-stack">
             <a class="button primary" href="https://github.com/ismailpitcher/TenderIntelligenceEngine" target="_blank" rel="noreferrer">Open repository</a>
-            <button id="downloadReportButton" class="button ghost" type="button">Download demo report</button>
-            <button id="downloadAccountsButton" class="button ghost" type="button">Download real tenders CSV</button>
+            <button id="downloadReportButton" class="button ghost" type="button">Download report</button>
+            <button id="downloadAccountsButton" class="button ghost" type="button">Download accounts CSV</button>
+            <button id="downloadNoticesButton" class="button ghost" type="button">Download notices CSV</button>
           </div>
         </section>
 
         <section class="card">
           <h2>Notes</h2>
           <p class="muted">
-            `Real Tenders` is real public procurement data from official sources. The demo account and signal tabs are still seeded product-demo data and should not be mistaken for live private-market intelligence.
+            <code>Accounts</code> here are real buyer organizations grouped from official public notices. <code>Signals</code> here are the real notices themselves. No mock account or mock signal data is shown in the deployed UI.
           </p>
         </section>
       </aside>
@@ -49,23 +50,23 @@
         <section class="hero">
           <div>
             <div class="eyebrow">Official public data first</div>
-            <h2>Start with real public tenders, then inspect the demo account workflow separately.</h2>
+            <h2>Start with real public tenders and the buyer accounts behind them.</h2>
             <p>
-              The live Pages site now separates true public procurement data from the seeded account-intelligence demo so you can tell exactly what is sourced from the market and what is only illustrative product behavior.
+              This site is now reduced to real public-source procurement intelligence only. Buyer accounts are derived from official notices, and the matching reasons are clearly marked as scoring output rather than source-authored facts.
             </p>
           </div>
           <div class="hero-metrics" id="heroMetrics"></div>
         </section>
 
         <section class="tabbar" id="tabbar">
-          <button class="tab active" data-view="real" type="button">Real Tenders</button>
-          <button class="tab" data-view="accounts" type="button">Demo Accounts</button>
-          <button class="tab" data-view="signals" type="button">Demo Signals</button>
-          <button class="tab" data-view="settings" type="button">Demo Settings</button>
+          <button class="tab active" data-view="overview" type="button">Overview</button>
+          <button class="tab" data-view="accounts" type="button">Accounts</button>
+          <button class="tab" data-view="notices" type="button">Notices</button>
+          <button class="tab" data-view="sources" type="button">Sources</button>
         </section>
 
         <section id="viewRoot" class="view-root">
-          <div class="loading-card">Loading real and demo data...</div>
+          <div class="loading-card">Loading real public procurement data...</div>
         </section>
       </main>
     </div>
