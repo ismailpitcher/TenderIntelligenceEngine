@@ -20,6 +20,23 @@ It is designed around one principle: the best opportunities usually do not menti
   - review notices as `qualified`, `watch`, or `rejected`
   - export the filtered list as CSV
 
+## Free hosting mode
+
+If you do not want to pay for backend hosting, this repo now supports a zero-backend deployment model:
+
+- GitHub Actions runs the sync and scoring pipeline on a schedule
+- the app exports a static `snapshot.json`
+- GitHub Pages serves a static review UI from `docs/`
+- review status and notes are stored in the browser with `localStorage`
+
+This means:
+
+- no paid backend hosting
+- no server process to keep alive
+- no persistent shared review database in the hosted version
+
+The live FastAPI app still exists for local use, but the free hosted version is static.
+
 ## Product assumptions
 
 The scoring model is tuned to Pitcher-style deals:
@@ -87,6 +104,29 @@ Re-score everything:
 python3 -m app.cli rescore
 ```
 
+Export the static GitHub Pages snapshot:
+
+```bash
+python3 -m app.cli export-static --out-dir docs/data --limit 1000
+```
+
+## GitHub Pages deployment
+
+The workflow in [.github/workflows/pages.yml](./.github/workflows/pages.yml) does all of the following for free on GitHub:
+
+1. installs dependencies
+2. syncs tender sources
+3. scores and exports a static snapshot
+4. deploys the `docs/` site to GitHub Pages
+
+The workflow runs:
+
+- on push to `main`
+- on manual dispatch
+- on a daily schedule
+
+Once GitHub Pages is enabled for the repository, the hosted app will be the static site in `docs/`.
+
 ## Environment variables
 
 - `TIE_DB_PATH`
@@ -139,4 +179,3 @@ app/
 data/
 tests/
 ```
-

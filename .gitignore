@@ -6,4 +6,4 @@ data/*.db
 data/*.sqlite
 data/*.sqlite3
 data/*.log
-
+docs/data/snapshot.json

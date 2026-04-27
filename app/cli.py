@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
 
 from .database import get_dashboard_stats, init_db, rescore_all
+from .export_static import write_snapshot
 from .scoring import score_notice
 from .services.ingestion import available_sources, sync_sources
 
@@ -26,6 +28,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     subparsers.add_parser("rescore", help="Re-score all stored notices")
     subparsers.add_parser("stats", help="Print dashboard stats as JSON")
+    export_parser = subparsers.add_parser("export-static", help="Export a static JSON snapshot")
+    export_parser.add_argument("--out-dir", type=Path, default=Path("docs/data"))
+    export_parser.add_argument("--limit", type=int, default=1000)
     return parser
 
 
@@ -55,8 +60,21 @@ def main() -> None:
 
     if args.command == "stats":
         print(json.dumps(get_dashboard_stats(), indent=2))
+        return
+
+    if args.command == "export-static":
+        snapshot = write_snapshot(args.out_dir, limit=args.limit)
+        print(
+            json.dumps(
+                {
+                    "out_dir": str(args.out_dir),
+                    "generated_at": snapshot["generated_at"],
+                    "count": snapshot["total"],
+                },
+                indent=2,
+            )
+        )
 
 
 if __name__ == "__main__":
     main()
-

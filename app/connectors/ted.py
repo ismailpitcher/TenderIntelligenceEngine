@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
 
+import httpx
+
 from .base import BaseConnector, flatten_i18n, normalize_date_string, normalize_space, xml_to_text
 from ..config import settings
 from ..types import NormalizedTender
@@ -38,8 +40,11 @@ class TEDConnector(BaseConnector):
     def _fetch_notice_text(self, xml_url: str | None) -> str:
         if not xml_url:
             return ""
-        response = self.client.get(xml_url)
-        response.raise_for_status()
+        try:
+            response = self.client.get(xml_url)
+            response.raise_for_status()
+        except httpx.HTTPError:
+            return ""
         return xml_to_text(response.text)[: settings.max_raw_text_length]
 
     def fetch(self, *, days_back: int, limit: int) -> list[NormalizedTender]:
@@ -99,4 +104,3 @@ class TEDConnector(BaseConnector):
                 )
             )
         return tenders
-
