@@ -15,7 +15,7 @@
         <div class="brand">
           <div class="eyebrow">Pitcher BDR Radar</div>
           <h1>Pitcher Signal Radar</h1>
-          <p>Static public demo of the local-first BDR workflow for spotting early RFP, RFQ, tender, and vendor-evaluation signals.</p>
+          <p>Live public tender intelligence from official procurement sources, plus a separate demo account workflow for the broader BDR product concept.</p>
         </div>
 
         <section class="card">
@@ -23,7 +23,7 @@
           <div class="meta-list">
             <div><span>Hosting</span><strong>GitHub Pages</strong></div>
             <div><span>Data mode</span><strong>Static export</strong></div>
-            <div><span>Source</span><strong>Local SQLite seed</strong></div>
+            <div><span>Real source</span><strong>TED, BOAMP, UK portals</strong></div>
             <div><span>Updated</span><strong id="generatedAt">Loading...</strong></div>
           </div>
         </section>
@@ -32,15 +32,15 @@
           <h2>Quick actions</h2>
           <div class="button-stack">
             <a class="button primary" href="https://github.com/ismailpitcher/TenderIntelligenceEngine" target="_blank" rel="noreferrer">Open repository</a>
-            <button id="downloadReportButton" class="button ghost" type="button">Download report</button>
-            <button id="downloadAccountsButton" class="button ghost" type="button">Download accounts CSV</button>
+            <button id="downloadReportButton" class="button ghost" type="button">Download demo report</button>
+            <button id="downloadAccountsButton" class="button ghost" type="button">Download real tenders CSV</button>
           </div>
         </section>
 
         <section class="card">
           <h2>Notes</h2>
           <p class="muted">
-            This public site is a static demo. The full authoring workflow, Prisma database, CSV upload, and manual account creation remain in the local `web/` app.
+            `Real Tenders` is real public procurement data from official sources. The demo account and signal tabs are still seeded product-demo data and should not be mistaken for live private-market intelligence.
           </p>
         </section>
       </aside>
@@ -48,25 +48,24 @@
       <main class="main">
         <section class="hero">
           <div>
-            <div class="eyebrow">Public demo</div>
-            <h2>See the BDR signal workflow on the live Pages URL.</h2>
+            <div class="eyebrow">Official public data first</div>
+            <h2>Start with real public tenders, then inspect the demo account workflow separately.</h2>
             <p>
-              This version is generated from the same seeded account intelligence used by the local MVP. It shows account scoring,
-              stage detection, outreach guidance, evidence, and settings in a zero-backend format.
+              The live Pages site now separates true public procurement data from the seeded account-intelligence demo so you can tell exactly what is sourced from the market and what is only illustrative product behavior.
             </p>
           </div>
           <div class="hero-metrics" id="heroMetrics"></div>
         </section>
 
         <section class="tabbar" id="tabbar">
-          <button class="tab active" data-view="dashboard" type="button">Dashboard</button>
-          <button class="tab" data-view="accounts" type="button">Accounts</button>
-          <button class="tab" data-view="signals" type="button">Signal Feed</button>
-          <button class="tab" data-view="settings" type="button">Settings</button>
+          <button class="tab active" data-view="real" type="button">Real Tenders</button>
+          <button class="tab" data-view="accounts" type="button">Demo Accounts</button>
+          <button class="tab" data-view="signals" type="button">Demo Signals</button>
+          <button class="tab" data-view="settings" type="button">Demo Settings</button>
         </section>
 
         <section id="viewRoot" class="view-root">
-          <div class="loading-card">Loading radar data...</div>
+          <div class="loading-card">Loading real and demo data...</div>
         </section>
       </main>
     </div>
