@@ -76,7 +76,12 @@ function renderResults(items, total) {
   meta.textContent = `${items.length} shown / ${total} total`;
 
   if (!items.length) {
-    list.innerHTML = `<div class="result-card"><div class="muted">No notices match the current filters yet.</div></div>`;
+    const fitMin = document.getElementById("fitMin").value;
+    const hint =
+      total > 0
+        ? `No notices match the current filters. Try lowering the minimum fit score from ${fitMin} or clearing the search box.`
+        : "No notices match the current filters yet.";
+    list.innerHTML = `<div class="result-card"><div class="muted">${hint}</div></div>`;
     document.getElementById("detailPane").innerHTML = `No detail to show.`;
     return;
   }

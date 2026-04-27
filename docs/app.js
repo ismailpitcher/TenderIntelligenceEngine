@@ -112,7 +112,12 @@ function renderResults() {
   meta.textContent = `${state.filtered.length} shown / ${state.snapshot.total} total`;
 
   if (!state.filtered.length) {
-    list.innerHTML = `<div class="result-card"><div class="muted">No notices match the current filters.</div></div>`;
+    const filters = currentFilters();
+    const hint =
+      state.snapshot.total > 0
+        ? `No notices match the current filters. Try lowering the minimum fit score from ${filters.fitMin} or clearing the search box.`
+        : "No notices are available in the current snapshot yet.";
+    list.innerHTML = `<div class="result-card"><div class="muted">${escapeHtml(hint)}</div></div>`;
     return;
   }
 
@@ -331,4 +336,3 @@ async function boot() {
 boot().catch((error) => {
   document.getElementById("resultsList").innerHTML = `<div class="result-card"><div class="muted">${escapeHtml(error.message)}</div></div>`;
 });
-
