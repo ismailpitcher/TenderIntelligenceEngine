@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  tender-intelligence-engine:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      TIE_DB_PATH: /app/data/tender_intelligence.db
+      TIE_DEFAULT_SYNC_DAYS: "10"
+      TIE_SYNC_LIMIT_PER_SOURCE: "20"
+    volumes:
+      - ./data:/app/data
+

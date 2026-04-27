@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ app_name }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/app.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="eyebrow">Pitcher-fit procurement radar</div>
+          <h1>{{ app_name }}</h1>
+          <p>{{ app_subtitle }}</p>
+        </div>
+
+        <section class="panel">
+          <h2>Sync</h2>
+          <div class="field">
+            <label for="daysBack">Days back</label>
+            <input id="daysBack" type="number" min="1" max="365" value="10" />
+          </div>
+          <div class="field">
+            <label for="limitPerSource">Notices per source</label>
+            <input id="limitPerSource" type="number" min="1" max="100" value="20" />
+          </div>
+          <div class="field">
+            <label>Sources</label>
+            <div id="sourceChecklist" class="checklist"></div>
+          </div>
+          <button id="syncButton" class="primary-button">Run sync</button>
+          <button id="rescoreButton" class="ghost-button">Re-score all</button>
+          <div id="syncStatus" class="helper-text"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Filters</h2>
+          <div class="field">
+            <label for="searchQuery">Search</label>
+            <input id="searchQuery" type="text" placeholder="commercial excellence, CRM, medtech..." />
+          </div>
+          <div class="field">
+            <label for="sourceFilter">Source</label>
+            <select id="sourceFilter"></select>
+          </div>
+          <div class="field">
+            <label for="countryFilter">Country</label>
+            <select id="countryFilter"></select>
+          </div>
+          <div class="field">
+            <label for="reviewFilter">Review status</label>
+            <select id="reviewFilter">
+              <option value="">All</option>
+              <option value="new">New</option>
+              <option value="qualified">Qualified</option>
+              <option value="watch">Watch</option>
+              <option value="rejected">Rejected</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fitMin">Minimum fit score</label>
+            <input id="fitMin" type="range" min="0" max="100" step="5" value="50" />
+            <div class="range-readout"><span id="fitMinValue">50</span>+</div>
+          </div>
+          <button id="applyFiltersButton" class="primary-button">Apply filters</button>
+          <a id="exportLink" class="ghost-button" href="/api/export.csv?fit_min=50">Export CSV</a>
+        </section>
+      </aside>
+
+      <main class="main-stage">
+        <section class="hero">
+          <div>
+            <div class="eyebrow">Precision over noise</div>
+            <h2>Find the tenders that actually look like Pitcher opportunities.</h2>
+            <p>
+              This dashboard scores each notice against sales enablement, commercial excellence,
+              field-force, CRM/ERP-connected selling, and regulated buyer engagement signals.
+            </p>
+          </div>
+          <div class="hero-card">
+            <div class="hero-metric">
+              <span class="hero-label">Mode</span>
+              <strong>Europe-first</strong>
+            </div>
+            <div class="hero-metric">
+              <span class="hero-label">Sources</span>
+              <strong>TED, BOAMP, UK</strong>
+            </div>
+            <div class="hero-metric">
+              <span class="hero-label">Focus</span>
+              <strong>Pitcher-fit</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="statsGrid" class="stats-grid"></section>
+
+        <section class="workspace">
+          <div class="list-column">
+            <div class="section-heading">
+              <h3>Ranked notices</h3>
+              <span id="resultsMeta" class="mono-text"></span>
+            </div>
+            <div id="resultsList" class="results-list"></div>
+          </div>
+
+          <div class="detail-column">
+            <div class="section-heading">
+              <h3>Notice detail</h3>
+            </div>
+            <div id="detailPane" class="detail-pane empty-state">
+              Select a notice to inspect fit reasoning, source metadata, and review actions.
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+
